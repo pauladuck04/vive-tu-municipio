@@ -13,6 +13,8 @@ FUENTES = {
                            "200337-1-centros-mayores-json/download/200337-1-centros-mayores-json.json",
     "padron_200076.csv": "https://datos.madrid.es/dataset/200076-0-padron/resource/"
                          "200076-2-padron-csv/download/200076-2-padron-csv.csv",
+    "distritos_300497.kml": "https://datos.madrid.es/dataset/300497-0-distritos-municipales-madrid/resource/"
+                            "300497-5-distritos-municipales-madrid/download/300497-5-distritos-municipales-madrid.kml",
 }
 
 carpeta = Path("datos/originales")
@@ -38,11 +40,17 @@ if not clave:
     print("[error] prevision_aemet.json: falta la variable de entorno AEMET_API_KEY")
 else:
     try:
-        # Paso 1: AEMET devuelve una URL temporal con los datos
-        paso1 = requests.get(URL_AEMET, headers={"api_key": clave}, timeout=60)
+        # AEMET limita las peticiones por minuto (error 429): se reintenta hasta 3 veces esperando 30 s
+        import time
+        for intento in range(1, 4):
+            paso1 = requests.get(URL_AEMET, headers={"api_key": clave}, timeout=60)
+            if paso1.status_code != 429:
+                break
+            print(f"    AEMET: demasiadas peticiones (429), reintento {intento}/3 en 30 s...")
+            time.sleep(30)
         paso1.raise_for_status()
         respuesta = paso1.json()
-        print(f"        AEMET paso 1: estado {respuesta.get('estado')}, {respuesta.get('descripcion')}")
+        print(f"    AEMET paso 1: estado {respuesta.get('estado')}, {respuesta.get('descripcion')}")
         if respuesta.get("estado") != 200:
             raise RuntimeError(respuesta)
         # Paso 2: descargar los datos de esa URL (vienen en ISO-8859-15)

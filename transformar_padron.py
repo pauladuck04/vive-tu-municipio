@@ -17,6 +17,14 @@ def edad_numerica(texto):
     encontrado = re.search(r"\d+", str(texto))
     return int(encontrado.group()) if encontrado else None
 
+def leer_limites():
+    """Polígono de cada distrito (generado por transformar_limites.py), por código."""
+    ruta = Path("datos/integrados/distritos_limites.geojson")
+    if not ruta.exists():
+        print("[aviso] no hay límites de distrito: ejecuta antes transformar_limites.py")
+        return {}
+    datos = json.loads(ruta.read_text(encoding="utf-8"))
+    return {f["properties"]["codigo"]: f["geometry"] for f in datos["features"]}
 
 def main():
     df = pd.read_csv(ORIGEN, sep=";", encoding="utf-8", dtype=str)
@@ -37,6 +45,8 @@ def main():
     mayores_80 = df[df["edad"] >= 80].groupby("codigo")["personas"].sum()
     fecha_datos = df["FX_DATOS_INI"].str.strip().iloc[0]
 
+    limites = leer_limites()
+
     documentos = []
     for codigo, nombre in DISTRITOS.items():
         documentos.append({
@@ -46,6 +56,7 @@ def main():
             "poblacion_total": int(total.get(codigo, 0)),
             "poblacion_65_mas": int(mayores_65.get(codigo, 0)),
             "poblacion_80_mas": int(mayores_80.get(codigo, 0)),
+            "limite": limites.get(codigo),
             "procedencia": [{"fuente": "200076-padron", "fecha_datos": fecha_datos}],
         })
 
