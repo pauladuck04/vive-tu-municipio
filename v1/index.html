@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViveTuMunicipio · Tu plan de la semana</title>
+<!-- V1: plan semanal. Lee plan.json (consulta_plan.py) y distritos_limites.geojson (límites de distrito).
+     Capas de datos dibujadas con D3.js; calles de fondo con teselas de CARTO (datos de OpenStreetMap) vía d3-tile. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-tile@1.0.0/dist/d3-tile.min.js"></script>
+<style>
+  :root { --texto: #1a1a1a; --suave: #4a4a4a; --linea: #cfcfcf; --acento: #0b5cad; --casa: #b3261e;
+          --centro: #1b7f3b; --lluvia: #e8f0fa; --mayores: #fff4d6; --fondo: #ffffff; --gris: #7d7d7d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         font-size: 20px; line-height: 1.5; color: var(--texto); background: var(--fondo); }
+  main { max-width: 1400px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  .sub { color: var(--suave); margin: 0 0 20px; }
+  .rejilla { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  @media (max-width: 900px) { .rejilla { grid-template-columns: 1fr; } }
+  #mapa { position: sticky; top: 16px; }
+  .marco { position: relative; border: 1px solid var(--linea); border-radius: 10px; overflow: hidden; background: #eef0f1; }
+  .marco svg { display: block; width: 100%; height: auto; cursor: grab; touch-action: none; }
+  .marco svg:active { cursor: grabbing; }
+  .controles { position: absolute; top: 12px; right: 12px; display: flex; flex-direction: column; gap: 6px; }
+  .controles button { width: 44px; height: 44px; font-size: 24px; font-weight: 700; line-height: 1;
+                      border: 1px solid var(--linea); border-radius: 8px; background: #fff; color: var(--texto); cursor: pointer;
+                      box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+  .controles button.texto { font-size: 13px; font-weight: 600; }
+  .controles button:focus-visible { outline: 3px solid var(--acento); outline-offset: 2px; }
+  .atribucion { position: absolute; right: 0; bottom: 0; font-size: 12px; background: rgba(255,255,255,.85);
+                padding: 2px 6px; border-top-left-radius: 6px; color: var(--suave); }
+  .atribucion a { color: var(--suave); }
+  .leyenda { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 16px; color: var(--suave); margin-top: 8px; }
+  .leyenda span { display: inline-flex; align-items: center; gap: 6px; }
+  .leyenda i { display: inline-block; width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff;
+               box-shadow: 0 0 0 1px var(--linea); }
+  .ayuda { font-size: 15px; color: var(--suave); margin: 4px 0 0; }
+  .centro { border: 2px solid var(--centro); border-radius: 10px; padding: 14px 18px; margin-bottom: 18px; }
+  .centro h2 { font-size: 21px; margin: 0 0 6px; }
+  .centro p { margin: 4px 0; }
+  .dia { border: 1px solid var(--linea); border-radius: 10px; padding: 12px 18px; margin-bottom: 12px; }
+  .dia.lluvia { background: var(--lluvia); }
+  .dia h3 { font-size: 21px; margin: 0 0 6px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+  .tiempo { font-size: 17px; font-weight: 400; color: var(--suave); }
+  .act { display: grid; grid-template-columns: 36px 62px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--linea); }
+  .act:first-of-type { border-top: 0; }
+  .num { width: 32px; height: 32px; border-radius: 50%; background: var(--acento); color: #fff;
+         font-weight: 700; font-size: 16px; display: grid; place-items: center; }
+  .hora { font-weight: 700; font-size: 21px; }
+  .titulo { font-weight: 700; }
+  .etiqueta { display: inline-block; font-size: 15px; font-weight: 700; background: var(--mayores);
+              border: 1px solid #c9a227; border-radius: 4px; padding: 0 6px; margin-left: 6px; }
+  .detalle { color: var(--suave); font-size: 17px; }
+  .act a { color: var(--acento); font-size: 17px; }
+  .aviso { color: var(--suave); font-size: 17px; font-style: italic; margin: 6px 0 0; }
+  #error { color: var(--casa); }
+  @media print { #mapa { position: static; } .controles { display: none; } .dia { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tu plan para esta semana</h1>
+  <p class="sub" id="resumen">Cargando…</p>
+  <p id="error" hidden></p>
+  <div class="rejilla">
+    <section id="mapa" aria-label="Mapa del plan">
+      <div class="marco">
+        <div class="controles">
+          <button type="button" id="acercar" aria-label="Acercar">+</button>
+          <button type="button" id="alejar" aria-label="Alejar">−</button>
+          <button type="button" id="centrar" class="texto" aria-label="Volver a centrar en tu casa">Casa</button>
+        </div>
+                <div class="atribucion">© <a href="https://www.openstreetmap.org/copyright" target="_blank">colaboradores de OpenStreetMap</a></div>
+      </div>
+      <div class="leyenda">
+        <span><i style="background: var(--casa)"></i>Tu casa</span>
+        <span><i style="background: var(--acento)"></i>Actividades del plan (número)</span>
+        <span><i style="background: var(--centro); border-radius: 3px"></i>Tu centro de mayores</span>
+        <span><i style="background: var(--gris)"></i>Otras actividades cercanas</span>
+      </div>
+      <p class="ayuda">Usa la rueda del ratón o los botones para acercar; arrastra para moverte.</p>
+    </section>
+    <section>
+      <div class="centro" id="centro" aria-label="Tu centro de mayores"></div>
+      <div id="dias" aria-label="Plan día a día"></div>
+    </section>
+  </div>
+</main>
+
+<script>
+const ZONA = "Europe/Madrid";
+const FMT_DIA = new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long", timeZone: ZONA });
+const CATEGORIAS = {
+  actividad_fisica: "Actividad física", talleres_y_formacion: "Taller", charlas_y_lectura: "Charla o lectura",
+  exposiciones_y_visitas: "Exposición o visita", espectaculos: "Espectáculo",
+  fiestas_y_encuentros: "Fiesta o encuentro", otros: "Otras",
+};
+// Teselas de fondo: CARTO "Positron" (claras, para que destaquen nuestros datos), a doble resolución (512 px)
+const TESELA = (x, y, z) => `https://tile.openstreetmap.org/${z}/${x}/${y}.png`;
+const km = m => (m / 1000).toFixed(1).replace(".", ",") + " km";
+const mayuscula = t => t.charAt(0).toUpperCase() + t.slice(1);
+
+Promise.all([d3.json("plan.json"), d3.json("distritos_limites.geojson")]).then(([plan, distritos]) => {
+  // Numerar las actividades en el orden en que aparecen en la lista (día y hora)
+  let n = 0;
+  plan.dias.forEach(d => d.actividades.forEach(a => { a.numero = ++n; }));
+  d3.select("#resumen").text(`${n} actividades a menos de ${plan.radio_km} km de tu casa (${plan.casa.nombre}).`);
+  dibujarLista(plan);
+  dibujarMapa(plan, distritos);
+}).catch(err => {
+  d3.select("#resumen").text("");
+  d3.select("#error").attr("hidden", null).text(
+    "No se han podido leer los datos. Ejecuta consulta_plan.py y abre la página con un servidor local. " + err);
+});
+
+function dibujarLista(plan) {
+  const c = plan.centro;
+  const centro = d3.select("#centro");
+  centro.append("h2").text(`Tu centro de mayores: ${c.nombre}`);
+  centro.append("p").text(`A ${km(c.distancia_m)} de casa · ${c.horario}`);
+  if (c.transporte) centro.append("p").text(`Cómo llegar: ${c.transporte}`);
+  centro.append("p").attr("class", "detalle").text(c.servicios);
+
+  const dias = d3.select("#dias").selectAll("article").data(plan.dias).join("article")
+    .attr("class", d => "dia" + (d.prevision && d.prevision.prob_lluvia >= 50 ? " lluvia" : ""));
+  const cabecera = dias.append("h3");
+  cabecera.append("span").text(d => mayuscula(FMT_DIA.format(new Date(d.fecha + "T12:00:00"))));
+  cabecera.append("span").attr("class", "tiempo").text(d => {
+    const p = d.prevision;
+    return p ? `${p.cielo} · ${p.tmin}–${p.tmax} °C · lluvia ${p.prob_lluvia} %` : "Sin previsión";
+  });
+
+  dias.each(function (d) {
+    const dia = d3.select(this);
+    const filas = dia.selectAll(".act").data(d.actividades).join("div").attr("class", "act");
+    filas.append("div").attr("class", "num").text(a => a.numero);
+    filas.append("div").attr("class", "hora").text(a => a.hora);
+    const cuerpo = filas.append("div");
+    const titulo = cuerpo.append("div");
+    titulo.append("span").attr("class", "titulo").text(a => a.titulo);
+    titulo.filter(a => a.nivel_mayores === "dirigida").append("span").attr("class", "etiqueta").text("Para mayores");
+    cuerpo.append("div").attr("class", "detalle").text(a => [
+      a.lugar_nombre, `a ${km(a.distancia_m)}`, CATEGORIAS[a.categoria] || a.categoria,
+      a.interior ? "Interior" : "Al aire libre",
+      a.gratuita ? "Gratis" : (a.precio || "De pago"),
+      a.accesibilidad_lugar.movilidad === "accesible" ? "Accesible"
+        : a.accesibilidad_lugar.movilidad === "parcial" ? "Parcialmente accesible" : null,
+    ].filter(Boolean).join(" · "));
+    cuerpo.filter(a => a.url_info).append("a").attr("href", a => a.url_info).attr("target", "_blank")
+      .text("Más información e inscripción");
+    if (d.descartadas_lluvia)
+      dia.append("p").attr("class", "aviso")
+        .text(`Hemos quitado ${d.descartadas_lluvia} actividades al aire libre porque se espera lluvia.`);
+    if (d.actividades.length < 2)
+      dia.append("p").attr("class", "aviso").text(`También puedes ir a tu centro de mayores (${c.horario}).`);
+  });
+}
+
+function dibujarMapa(plan, distritos) {
+  const ancho = 720, alto = 720;
+  const casa = [plan.casa.lon, plan.casa.lat];
+  const radioGrados = plan.radio_km / 111.32;
+
+  // D3 espera los polígonos en sentido horario; el GeoJSON estándar (RFC 7946) los da en antihorario.
+  // Si un polígono "ocupa más de medio planeta", está al revés: se le da la vuelta.
+  distritos.features.forEach(f => {
+    if (d3.geoArea(f) > 2 * Math.PI) f.geometry.coordinates = f.geometry.coordinates.map(r => r.slice().reverse());
+  });
+
+  // Proyección "web Mercator", la misma que usan las teselas. El zoom solo cambia su escala y su traslación.
+  const proyeccion = d3.geoMercator();
+  const ruta = d3.geoPath(proyeccion);
+  const xy = coordenadas => proyeccion(coordenadas);
+  const teselas = d3.tile().extent([[0, 0], [ancho, alto]]).tileSize(256).clampX(false);
+
+  const svg = d3.select(".marco").insert("svg", ".controles")
+    .attr("viewBox", `0 0 ${ancho} ${alto}`).attr("role", "img")
+    .attr("aria-label", "Mapa con tu casa, tu centro de mayores y las actividades del plan");
+
+  // Capas, de abajo arriba
+    const capaTeselas = svg.append("g").attr("pointer-events", "none")
+    .style("filter", "grayscale(0.7) brightness(1.05)");   // fondo apagado para que destaquen los datos
+  const capaDistritos = svg.append("g").attr("pointer-events", "none");
+  const capaRadio = svg.append("path").attr("pointer-events", "none")
+    .datum(d3.geoCircle().center(casa).radius(radioGrados)())
+    .attr("fill", "rgba(11, 92, 173, 0.07)").attr("stroke", "var(--acento)")
+    .attr("stroke-dasharray", "8 6").attr("stroke-width", 2);
+  const capaPuntos = svg.append("g");
+
+  // Distritos: solo contorno y nombre (las calles ya dan contexto)
+  const bordes = capaDistritos.selectAll("path").data(distritos.features).join("path")
+    .attr("fill", "none").attr("stroke", "#6d6a60").attr("stroke-width", 1.6).attr("stroke-opacity", 0.55);
+  const nombres = capaDistritos.selectAll("text").data(distritos.features).join("text")
+    .attr("text-anchor", "middle").attr("font-size", 16).attr("font-weight", 700).attr("fill", "#5f5c53")
+    .attr("stroke", "#fff").attr("stroke-width", 4).attr("paint-order", "stroke")
+    .text(f => f.properties.nombre.toUpperCase());
+
+  // Otras actividades candidatas (gris)
+  const candidatas = capaPuntos.append("g").selectAll("circle").data(plan.candidatas).join("circle")
+    .attr("r", 6).attr("fill", "var(--gris)").attr("stroke", "#fff").attr("stroke-width", 1.5).attr("opacity", 0.85);
+  candidatas.append("title").text(d => d.titulo);
+
+  // Centro de mayores (cuadrado verde con una "C")
+  const centro = capaPuntos.append("g");
+  centro.append("rect").attr("x", -14).attr("y", -14).attr("width", 28).attr("height", 28).attr("rx", 5)
+    .attr("fill", "var(--centro)").attr("stroke", "#fff").attr("stroke-width", 2.5);
+  centro.append("text").attr("text-anchor", "middle").attr("dy", "0.36em").attr("fill", "#fff")
+    .attr("font-size", 16).attr("font-weight", 800).text("C");
+  centro.append("title").text(`Tu centro de mayores: ${plan.centro.nombre}`);
+
+  // Actividades del plan: un marcador por lugar con los números de sus actividades
+  const porLugar = d3.groups(plan.dias.flatMap(d => d.actividades), a => a.lugar_id)
+    .map(([, acts]) => ({ coordenadas: acts[0].ubicacion.coordinates, lugar: acts[0].lugar_nombre,
+                          numeros: acts.map(a => a.numero).join(", "), titulos: acts.map(a => `${a.numero}. ${a.titulo}`) }));
+  const marcas = capaPuntos.append("g").selectAll("g").data(porLugar).join("g");
+  marcas.append("rect")
+    .attr("x", d => -(12 + 5 * d.numeros.length)).attr("y", -16)
+    .attr("width", d => 24 + 10 * d.numeros.length).attr("height", 32).attr("rx", 16)
+    .attr("fill", "var(--acento)").attr("stroke", "#fff").attr("stroke-width", 2.5);
+  marcas.append("text").attr("text-anchor", "middle").attr("dy", "0.36em")
+    .attr("fill", "#fff").attr("font-size", 16).attr("font-weight", 700).text(d => d.numeros);
+  marcas.append("title").text(d => `${d.lugar}\n${d.titulos.join("\n")}`);
+
+  // Casa (estrella roja), encima de todo
+  const estrella = capaPuntos.append("path").attr("d", d3.symbol(d3.symbolStar, 520)())
+    .attr("fill", "var(--casa)").attr("stroke", "#fff").attr("stroke-width", 2.5);
+  estrella.append("title").text("Tu casa");
+
+  // Redibujar todo con la proyección del zoom actual
+  function alHacerZoom({ transform }) {
+    const t = teselas(transform);
+    capaTeselas.selectAll("image").data(t, d => d).join("image")
+      .attr("href", d => TESELA(...d3.tileWrap(d)))
+      .attr("x", ([x]) => (x + t.translate[0]) * t.scale)
+      .attr("y", ([, y]) => (y + t.translate[1]) * t.scale)
+      .attr("width", t.scale).attr("height", t.scale);
+
+    proyeccion.scale(transform.k / (2 * Math.PI)).translate([transform.x, transform.y]);
+    bordes.attr("d", ruta);
+    nombres.attr("transform", f => `translate(${ruta.centroid(f)})`);
+    capaRadio.attr("d", ruta);
+    candidatas.attr("transform", d => `translate(${xy(d.ubicacion.coordinates)})`);
+    centro.attr("transform", `translate(${xy(plan.centro.ubicacion.coordinates)})`);
+    marcas.attr("transform", d => `translate(${xy(d.coordenadas)})`);
+    estrella.attr("transform", `translate(${xy(casa)})`);
+  }
+
+  // Encuadre inicial: el círculo de búsqueda con un 25 % de margen
+  const inicial = (() => {
+    const p = d3.geoMercator().fitExtent([[0, 0], [ancho, alto]], d3.geoCircle().center(casa).radius(radioGrados * 1.25)());
+    const [tx, ty] = p.translate();
+    return d3.zoomIdentity.translate(tx, ty).scale(p.scale() * 2 * Math.PI);
+  })();
+
+  const zoom = d3.zoom()
+    .scaleExtent([inicial.k / 8, inicial.k * 16])   // de ver todo Madrid a nivel de calle
+    .extent([[0, 0], [ancho, alto]])
+    .on("zoom", alHacerZoom);
+  svg.call(zoom).call(zoom.transform, inicial);
+
+  // Botones (para quien no use rueda de ratón)
+  d3.select("#acercar").on("click", () => svg.transition().duration(300).call(zoom.scaleBy, 1.6));
+  d3.select("#alejar").on("click", () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6));
+  d3.select("#centrar").on("click", () => svg.transition().duration(500).call(zoom.transform, inicial));
+}
+</script>
+</body>
+</html>
