@@ -1,0 +1,2773 @@
+{
+	"@context": {
+		"c": "http://www.w3.org/2002/12/cal#",
+		"dcterms": "http://purl.org/dc/terms/",
+		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"loc": "http://purl.org/ctic/infraestructuras/localizacion#",
+		"org": "http://purl.org/ctic/infraestructuras/organizacion#",
+		"vcard": "http://www.w3.org/2006/vcard/ns#",
+		"schema": "https://schema.org/",
+		"title": "vcard:fn",
+		"id": "dcterms:identifier",
+		"relation": "dcterms:relation",
+		"references": "dcterms:references",
+		"address": "vcard:adr",
+		"area": "loc:barrio",
+		"district": "loc:distrito",
+		"locality": "vcard:locality",
+		"postal-code": "vcard:postal-code",
+		"street-address": "vcard:street-address",
+		"location": "vcard:geo",
+		"latitude": "geo:lat",
+		"longitude": "geo:long",
+		"organization": "vcard:org",
+		"organization-desc": "dcterms:description",
+		"accesibility": "org:accesibilidad",
+		"services": "org:servicios",
+		"schedule": "org:horario",
+		"organization-name": "vcard:organization-name",
+		"description": "c:summary",
+		"link": "c:url",
+		"uid": "c:uid",
+		"dtstart": "c:dtstart",
+		"dtend": "c:dtend",
+		"time": "c:time",
+		"excluded-days": "c:exdate",
+		"event-location": "c:location",
+		"free": "schema:free",
+		"price": "c:resource",
+		"recurrence": "c:rrule",
+		"days": "c:byday",
+		"frequency": "c:freq",
+		"interval": "c:interval",
+		"audience": "dc:audience"
+	},
+	"@graph": [
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12692618-centro-intergeneracional-ouka-leele-centro-mayores-planta-1.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "12692618",
+		"title": "Centro Intergeneracional Ouka Leele. Centro de Mayores - planta 1",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=97a66b2e8b815910VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela/Barrio/Legazpi"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28045",
+			"street-address": "CALLE BRONCE 16"
+		},
+		"location": {
+			"latitude": 40.389367699255175,
+			"longitude": -3.6884383126394686
+		},
+		"organization": {
+			"organization-desc": "Un espacio de referencia dedicado a la promoción del bienestar, la participación activa y el envejecimiento saludable de las personas mayores del distrito. En la planta 1 del Centro Intergeneracional Ouka Leele, Centro municipal de mayores, se ofrece una amplia programación de actividades culturales, educativas, deportivas y recreativas, orientadas a favorecer la convivencia, el aprendizaje continuo y el mantenimiento de un estilo de vida activo. Estos programas se complementan con iniciativas de carácter intergeneracional, que fomentan el intercambio de experiencias, el respeto mutuo y la cooperación entre personas de diferentes edades, fortaleciendo así la cohesión social. Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. y estar empadronado en el distrito de Arganzuela salvo en casos excepcionales. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Legazpi (líneas 3, 6) / Arganzuela-Planetario (línea 6)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 9 a 20 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, peluquería, prensa, comedor y cafetería, biblioteca, wifi y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas, preventivas y de autocuidado. Zona wifi",
+			"organization-name": "Centro Intergeneracional Ouka Leele. Centro de Mayores - planta 1"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/168132-centro-municipal-mayores-castillo-ucles.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "168132",
+		"title": "Centro Municipal de Mayores  Castillo de Uclés",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=35f4085f5181c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Simancas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28037",
+			"street-address": "CALLE CASTILLO DE UCLES 35 PLANTA BAJA"
+		},
+		"location": {
+			"latitude": 40.43121516569965,
+			"longitude": -3.623191946103776
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Simancas (línea 7)",
+			"accesibility": "1",
+			"schedule": "Horario del centro: Lunes a domingo, de  9:30 a 20:30 horas.  Horario de atención de Junta Directiva: Martes y miércoles de 11 a 13 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, cafetería, wifi, y se desarrollan talleres y actividades socioculturales, de expresión corporal, formativas, culturales,  artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores  Castillo de Uclés"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4612790-centro-municipal-mayores-acuario.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "4612790",
+		"title": "Centro Municipal de Mayores Acuario",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4de44c02bbfa3110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas/Barrio/CascoHBarajas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28042",
+			"street-address": "CALLE ACUARIO 27 PLANTA 1ª"
+		},
+		"location": {
+			"latitude": 40.47487109911954,
+			"longitude": -3.5797598845437957
+		},
+		"organization": {
+			"organization-desc": "Los Centros Municipales de Mayores son equipamientos de servicios sociales no residenciales, destinados a promover la convivencia de las personas mayores, propiciando la participación y la integración social. Para poder asociarse a cualquiera de estos centros,  es necesario ser titular de la tarjeta madridmayor.es . Para solicitar esta tarjeta consulte el apartado titulado información relacionada. Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 9 a 20:45 horas. Sábados, domingos y festivos, de 10 a 13:30 y de 16 a 20 horas. Los días 24 y 31 de diciembre, de 10 a 13 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "El centro dispone de servicio de comedor, talleres manuales, culturales y de ejercicio físico, actividades culturales (jornadas, conferencias, visitas a museos, exposiciones, teatro), actividades de ocio (bailes, fiestas) y actividades intergeneracioneles (proyecto Alas para abordar situaciones de soledad no deseada).",
+			"organization-name": "Centro Municipal de Mayores Acuario"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/72864-centro-municipal-mayores-alfonso-xii.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "72864",
+		"title": "Centro Municipal de Mayores Alfonso XII",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=86bb3d232e91f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/ElPardo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28048",
+			"street-address": "CALLE MIRA EL RIO 4"
+		},
+		"location": {
+			"latitude": 40.51973221668713,
+			"longitude": -3.777683378503506
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 21 horas  Fines de semana y festivos: de 9:30 a 20:30 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, prensa, comedor y cafetería, y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Alfonso XII"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11745-centro-municipal-mayores-alto-arenal.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11745",
+		"title": "Centro Municipal de Mayores Alto Arenal",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1bc055004e91f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/Portazgo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28018",
+			"street-address": "CALLE LAGO MARACAIBO 8"
+		},
+		"location": {
+			"latitude": 40.383202672832304,
+			"longitude": -3.6520212485606334
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguiente enlace",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Cafetería y actividades los fines de semana y festivos, de 10 a 14 y de 16 a 19 horas.",
+			"services": "Servicios de animación sociocultural, prensa, wifi, y hay una amplia oferta de talleres y actividades culturales y manuales, artísticas, informáticas, deportivas y preventivas.",
+			"organization-name": "Centro Municipal de Mayores Alto Arenal"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11720-centro-municipal-mayores-antonio-machado.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11720",
+		"title": "Centro Municipal de Mayores Antonio Machado",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c73d66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Arcos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28037",
+			"street-address": "CALLE SAN ROMAN DEL VALLE 8"
+		},
+		"location": {
+			"latitude": 40.420280457570335,
+			"longitude": -3.621730741880216
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Alsacia ( línea 2)",
+			"accesibility": "1",
+			"schedule": "Horario del centro: Lunes a viernes, de 9 a 21 horas.  Horario de atención de la Junta Directiva: Jueves de 10:30 a 12 horasa.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, prensa, biblioteca, wifi, y se desarrollan talleres y actividades socioculturales, de expresión corporal, formativas, culturales,  artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Antonio Machado"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11607270-centro-municipal-mayores-antonio-mingote.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11607270",
+		"title": "Centro Municipal de Mayores Antonio Mingote",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2565eb57a012f710VgnVCM1000001d4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/Arapiles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28015",
+			"street-address": "CALLE VALLEHERMOSO 47"
+		},
+		"location": {
+			"latitude": 40.43459948809033,
+			"longitude": -3.708768295288647
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Quevedo (línea 2), Arg&amp;uuml;elles (líneas 3, 4, 6), Moncloa (línea 3, 6)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado 25 diciembre, 1 y 6 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Antonio Mingote"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6166668-centro-municipal-mayores-anton-martin.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "6166668",
+		"title": "Centro Municipal de Mayores Antón Martín",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c5a8ff0f9ae32310VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Embajadores"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28012",
+			"street-address": "CALLE CABEZA 14"
+		},
+		"location": {
+			"latitude": 40.41183963819907,
+			"longitude": -3.7029203219492826
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 6, 26, 32, M1  Metro: Tirso de Molina (línea 1), Antón Martín (línea 1)  Aparcamiento: Garaje Centro (68), calle Relatores 11",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 20 horas.  Fines de semana y festivos: de 11:00 a 20:00 horas.  Se cierra el 24, 25 y 31 de diciembre y el 1 y 6 de enero",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Antón Martín"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11697-centro-municipal-mayores-aravaca.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11697",
+		"title": "Centro Municipal de Mayores Aravaca",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1e5d66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Aravaca"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28023",
+			"street-address": "TRAVESIA CA&amp;Ntilde;O 7"
+		},
+		"location": {
+			"latitude": 40.458685154594626,
+			"longitude": -3.786485262902293
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1,5",
+			"schedule": "De lunes a domingo, de 9 a 20:45 horas.",
+			"services": "Se ofrecen servicios de podología, peluquería, comedor y cafetería, prensa, wifi, servicio de fisioterapia preventiva, servicio de animación sociocultural con el desarrollo de talleres en las siguientes áreas: físicas, culturales, artísticas, plásticas,  emocionales y de desarrollo de nuevas tecnologías e informática Además de actividades culturales y programación mensual de interés para los usuarios del centro, se desarrolla también el programa de terapia ocupacional con talleres de estimulación cognitiva, gerontogimnasia y manualidades.",
+			"organization-name": "Centro Municipal de Mayores Aravaca"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/22618-centro-municipal-mayores-arturo-pajuelo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "22618",
+		"title": "Centro Municipal de Mayores Arturo Pajuelo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f791e35bba51c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Orcasitas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "CALLE SEGURA 3"
+		},
+		"location": {
+			"latitude": 40.36774766877649,
+			"longitude": -3.716336417331666
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, de nuevas tecnologías (informática y de telefonía móvil), deportivas y preventivas y de autocuidado. Club de Senderismo, Club de Lectura y Grupo de Mujeres.  Equipo de animación:  cmmusera.blogspot.com    Facebook   Instagram   Youtube",
+			"organization-name": "Centro Municipal de Mayores Arturo Pajuelo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/57828-centro-municipal-mayores-ascao.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "57828",
+		"title": "Centro Municipal de Mayores Ascao",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bd5a8ed67151c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/PuebloNuevo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28017",
+			"street-address": "CALLE ASCAO 6"
+		},
+		"location": {
+			"latitude": 40.42959233041236,
+			"longitude": -3.6413353211881443
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Ascao (línea 7)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, zona wifi, comedor y cafetería, biblioteca, fisioterapia preventiva y voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Ascao"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11757-centro-municipal-mayores-barrio-aeropuerto.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11757",
+		"title": "Centro Municipal de Mayores Barrio Aeropuerto",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=baad66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas/Barrio/Aeropuerto"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28042",
+			"street-address": "CALLE MEDINA DE POMAR 25"
+		},
+		"location": {
+			"latitude": 40.452945310635975,
+			"longitude": -3.5845783724056974
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 11 a 14 y de 17 a 20 horas. Sábados y domingos, de 17 a 20 horas. Cerrado festivos y fines de semana de julio, agosto completo. Días 24 y 31 diciembre, de 11 a 13 horas.",
+			"services": "El centro ofrece talleres culturales, talleres físicos, actividades culturales (jornadas, conferencias, visitas a museos, exposiciones, teatro), actividades de ocio (bailes, fiestas) y actividades intergeneracionales.",
+			"organization-name": "Centro Municipal de Mayores Barrio Aeropuerto"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/185322-centro-municipal-mayores-benito-martin-lozano.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "185322",
+		"title": "Centro Municipal de Mayores Benito Martín Lozano",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=451fad69b8e5d010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Justicia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28004",
+			"street-address": "CALLE SANTA BRIGIDA 12"
+		},
+		"location": {
+			"latitude": 40.42439883712205,
+			"longitude": -3.6992118351165257
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Chueca (línea 5), Tribunal (líneas 1 y 10)  Bus: 3  Bicimad: calle Hortaleza 63  Aparcamiento: Escuelas de San Anton (91), Santa Brígida",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 20 horas  Sábados, domingos y festivos: de 11 a 20 horas  Se cierra el 24, 25 y 31 de diciembre y el 1 y 6 de enero",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Benito Martín Lozano"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11689-centro-municipal-mayores-benito-perez-galdos.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11689",
+		"title": "Centro Municipal de Mayores Benito Pérez Galdós",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=25b166051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/Pacifico"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28007",
+			"street-address": "AVENIDA CIUDAD DE BARCELONA 182"
+		},
+		"location": {
+			"latitude": 40.40149864202748,
+			"longitude": -3.675648637319671
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Pacífico (líneas 1 y 6)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 21 horas. Cerrado días 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, wifi. Se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado. Señalización braille en ascensores.",
+			"organization-name": "Centro Municipal de Mayores Benito Pérez Galdós"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11715-centro-municipal-mayores-bucaramanga.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11715",
+		"title": "Centro Municipal de Mayores Bucaramanga",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=57fd66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/PinarRey"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28033",
+			"street-address": "AVENIDA BARRANQUILLA 1"
+		},
+		"location": {
+			"latitude": 40.472779200579375,
+			"longitude": -3.6398835512197767
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 72, 87  Metro: San Lorenzo (línea 4)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20 horas.  Sábados, de 10 a 14 y de 16 a 20:30 horas. Domingos y festivos, de 10 a 14 horas.  Cierra mes de agosto y los días 24, 25, 31 de diciembre y el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Bucaramanga"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/22753-centro-municipal-mayores-campamento.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "22753",
+		"title": "Centro Municipal de Mayores Campamento",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4eb1e35bba51c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina/Barrio/Campamento"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28024",
+			"street-address": "CARRETERA BOADILLA DEL MONTE 13"
+		},
+		"location": {
+			"latitude": 40.39897672363651,
+			"longitude": -3.767589641941715
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20:30 horas Fines de semana y festivos, de 10 a 13:45 horas y de 16 a 19:45 horas",
+			"services": "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnológicas, excursiones, visitas culturales, recreativas y de ocio); talleres, actividades preventivas y de autocuidado; podología; peluquería; comedor y cafetería; biblioteca, sala de lectura y prensa diaria.  Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Campamento"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/91398-centro-municipal-mayores-canal-panama.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "91398",
+		"title": "Centro Municipal de Mayores Canal de Panamá",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4d6fdef5ab41c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/SanPascual"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28027",
+			"street-address": "CALLE PADRE COLOMA 2"
+		},
+		"location": {
+			"latitude": 40.44071019620189,
+			"longitude": -3.652412289521502
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Barrio Concepción (línea 7)",
+			"accesibility": "1,6",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, peluquería, prensa, gimnasio, zona WIFI, comedor y cafetería, voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Canal de Panamá"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5428003-centro-municipal-mayores-canillejas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "5428003",
+		"title": "Centro Municipal de Mayores Canillejas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ec8e690f8c404210VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Canillejas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28022",
+			"street-address": "CALLE ESFINGE 35"
+		},
+		"location": {
+			"latitude": 40.44357672230477,
+			"longitude": -3.6092849688979878
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Torre Arias (línea 5)",
+			"accesibility": "1",
+			"schedule": "Horario del centro: Lunes a domingo, de 9 a 20:30 horas.  Horario Junta Directiva: lunes a viernes de 11 a 13 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, fisioterapia preventiva, cafetería, prensa, biblioteca, wifi, y se desarrollan talleres y actividades socioculturales, de expresión corporal, formativas, culturales,  artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Canillejas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4609703-centro-municipal-mayores-carmen-laforet.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "4609703",
+		"title": "Centro Municipal de Mayores Carmen Laforet",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2e18c23181b83110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/Costillares"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28033",
+			"street-address": "CALLE JAZMIN 46"
+		},
+		"location": {
+			"latitude": 40.47916166779593,
+			"longitude": -3.666384271971277
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Pinar de Chamartín (líneas 1 y 4)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.  Abierto el servicio de cafetería, de lunes a domingo, de 9 a 19:30 horas y el de comedor de 13:30 a 15:30 horas. Cerrado el 25 de diciembre el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, cafetería y comedor, podología, peluquería, prensa, biblioteca, zona WIFI y voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Carmen Laforet"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11707-centro-municipal-mayores-casa-bulevar.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11707",
+		"title": "Centro Municipal de Mayores Casa del Bulevar",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f34e66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/SanDiego"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28053",
+			"street-address": "CALLE PE&amp;Ntilde;A GORBEA 22"
+		},
+		"location": {
+			"latitude": 40.39520480190822,
+			"longitude": -3.6663972915992518
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Puente Vallecas, Nueva Numancia (línea 1)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Programas socioculturales, ocupacionales o formativos, con el objetivo de favorecer el envejecimiento activo, la calidad de vida, la relación y la convivencia, a través de distintas y variadas actividades o talleres gratuitos. Se planifican con la participación de las Juntas Directivas y se dinamizan por el servicio de animación sociocultural, del que disponen todos los Centros. Actividades de programación continua: manuales, culturales, artísticas, de mantenimiento físico, recreativas o de educación digital básica. Actividades puntuales o esporádicas: conferencias, carnavales, excursiones, visitas culturales o viajes, etc.  Servicios de cafetería, cuyo objetivo es favorecer las relaciones personales.  Espacios de nuevas tecnologías (disponibilidad de aulas informáticas) que tienen como objetivo favorecer la formación informática. Son gratuitos.  Servicios Sala de lectura, con el objetivo de favorecer el acceso a la información y servir de apoyo a la lectura. Es un espacio de acceso abierto y de carácter gratuita.  Prensa diaria, en formato digital o en formato papel. Otros servicios, que tienen como objetivo favorecer el envejecimiento activo y el bienestar, con precios asequibles: peluquería.",
+			"organization-name": "Centro Municipal de Mayores Casa del Bulevar"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11688-centro-municipal-mayores-casa-reloj.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11688",
+		"title": "Centro Municipal de Mayores Casa del Reloj",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4a6e66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela/Barrio/Chopera"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28045",
+			"street-address": "PASEO CHOPERA 10"
+		},
+		"location": {
+			"latitude": 40.39307289237465,
+			"longitude": -3.699005654074825
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. y estar empadronado en el distrito de Arganzuela salvo en casos excepcionales. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Legazpi (líneas 3, 6)",
+			"accesibility": "1",
+			"schedule": "De lunes a sábados, de 9:30 a 20 horas. Domingos y festivos, de 10 a 14 horas y de 16 a 20 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas, preventivas y de autocuidado. Zona wifi",
+			"organization-name": "Centro Municipal de Mayores Casa del Reloj"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11692-centro-municipal-mayores-castilla.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11692",
+		"title": "Centro Municipal de Mayores Castilla",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e6be66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin/Barrio/Castilla"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28046",
+			"street-address": "PASEO CASTELLANA 304"
+		},
+		"location": {
+			"latitude": 40.48105770919051,
+			"longitude": -3.684874769790646
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Begoña (línea 10)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes: de 9 a 19:30 horas. Fines de semana y festivos: de 9 a 18:30 horas Agosto cerrado.",
+			"services": "Servicios: Animación sociocultural &amp;ndash; Podología &amp;ndash; Peluquería &amp;ndash; Cafetería &amp;ndash; Prensa &amp;ndash; Wifi  Actividades y Talleres: Plásticas, culturales , formativas, físicas, tecnológicas, escénicas, psicosociales, ambientales, visitas culturales, charlas informativas y salidas.",
+			"organization-name": "Centro Municipal de Mayores Castilla"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11699-centro-municipal-mayores-cerro-bermejo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11699",
+		"title": "Centro Municipal de Mayores Cerro Bermejo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=901b79262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina/Barrio/PuertaAngel"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28011",
+			"street-address": "CALLE PERICLES 6"
+		},
+		"location": {
+			"latitude": 40.40932336284664,
+			"longitude": -3.7301272540031154
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20:30 horas Fines de semana y festivos, de 10 a 13:45 horas y de 16 a 19:45 horas",
+			"services": "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnólogicas, excursiones, visitas culturales, recreativas y de ocio); talleres, actividades preventivas y de autocuidado; podología; peluquería; comedor y cafetería; biblioteca, sala de lectura y prensa diaria.  Zona wifi",
+			"organization-name": "Centro Municipal de Mayores Cerro Bermejo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/122364-centro-municipal-mayores-ciudad-pegaso.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "122364",
+		"title": "Centro Municipal de Mayores Ciudad Pegaso",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8d1e8899fc81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Rejas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28022",
+			"street-address": "AVENIDA QUINTA 5"
+		},
+		"location": {
+			"latitude": 40.44745966235626,
+			"longitude": -3.5963180141424904
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Horario del centro: Lunes a domingo, de 9 a 20:30 horas.  Horario Junta Directiva: Jueves, de 10:30 a 12:30 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, y se desarrollan talleres y actividades socioculturales, de expresión corporal, formativas, culturales,  artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Ciudad Pegaso"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11698-centro-municipal-mayores-ciudad-mejico.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11698",
+		"title": "Centro Municipal de Mayores Ciudad de Méjico",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=830f66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina/Barrio/LasAguilas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28044",
+			"street-address": "CALLE RAFAEL FINAT 47"
+		},
+		"location": {
+			"latitude": 40.3797526501985,
+			"longitude": -3.769134238811594
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Renfe: Las Águilas, Maestra Justa Freire Polideportivo Aluche (C5)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20:30 horas Fines de semana y festivos, de 10 a 13:45 horas y de 16 a 19:45 horas",
+			"services": "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnólogicas, excursiones, visitas culturales, recreativas y de ocio);  talleres, actividades preventivas y de autocuidado; podología; peluquería; comedor y cafetería; biblioteca, sala de lectura y prensa diaria.  Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Ciudad de Méjico"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11719-centro-municipal-mayores-daroca.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11719",
+		"title": "Centro Municipal de Mayores Daroca",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=37a366051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro/Barrio/CascoHVicalvaro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28032",
+			"street-address": "AVENIDA DAROCA 342"
+		},
+		"location": {
+			"latitude": 40.40353724651489,
+			"longitude": -3.609279700858636
+		},
+		"organization": {
+			"organization-desc": "El Centro Municipal de Mayores Daroca consta de dos edificios, popularmente diferenciados Edificio Antiguo y Edificio Nuevo. Repartiéndose entre ellos las diferentes instalaciones y talleres del centro. Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 130, 100, E3, E5, 4, 106  Metro: Vicálvaro (línea 9)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9:30 a 21 horas Sábados, domingos y festivos: de 9:30 a 20 horas",
+			"services": "Se ofrecen servicios de animación sociocultural y terapia ocupacional, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Daroca"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11696-centro-municipal-mayores-dehesa-villa.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11696",
+		"title": "Centro Municipal de Mayores Dehesa de la Villa",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d92f66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Valdezarza"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28035",
+			"street-address": "CALLE ANTONIO MACHADO 22"
+		},
+		"location": {
+			"latitude": 40.46712304625271,
+			"longitude": -3.719495422191219
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Valdezarza, Antonio Machado (línea 7)",
+			"accesibility": "1,5",
+			"schedule": "De lunes a domingo, de 9 a 20:45 horas.",
+			"services": "Se ofrecen servicios de podología, peluquería, comedor y cafetería, prensa, wifi, servicio de fisioterapia preventiva, servicio de animación sociocultural con el desarrollo de talleres en las siguientes áreas: físicas, culturales, artísticas, plásticas,  emocionales y de desarrollo de nuevas tecnologías e informática. Además, actividades culturales y programación mensual de interés para los usuarios del centro y se desarrolla también el programa de terapia ocupacional con talleres de estimulación cognitiva, gerontogimnasia y manualidades.",
+			"organization-name": "Centro Municipal de Mayores Dehesa de la Villa"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6166665-centro-municipal-mayores-dos-amigos.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "6166665",
+		"title": "Centro Municipal de Mayores Dos Amigos",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=04941bc268e32310VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Universidad"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28015",
+			"street-address": "CALLE DOS AMIGOS 4"
+		},
+		"location": {
+			"latitude": 40.42469203354866,
+			"longitude": -3.7102597228071383
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 001, 1, 2, 25, 39, 44, 74, 133, 138, C1, C2  Metro: Plaza de España (líneas 3 y 10)  Bicimad: calle Princesa, 5",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 20 horas.  Fines de semana y festivos: de 11 a 20 horas.  Se cierra el 24, 25 y 31 de diciembre y el 1 y 6 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Dos Amigos"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5912581-centro-municipal-mayores-eduardo-minguito.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "5912581",
+		"title": "Centro Municipal de Mayores Eduardo Minguito",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=603ff860f205d210VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/LosRosales"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28021",
+			"street-address": "CALLE LEONOR GONGORA 62"
+		},
+		"location": {
+			"latitude": 40.348560278277986,
+			"longitude": -3.6866006552956883
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Villaverde Bajo Cruce",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, peluquería, podología, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Eduardo Minguito"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4997526-centro-municipal-mayores-almendro.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "4997526",
+		"title": "Centro Municipal de Mayores El Almendro",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f4c02f0875e9c110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro/Barrio/Valdebernardo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28032",
+			"street-address": "CALLE LADERA DE LOS ALMENDROS 6"
+		},
+		"location": {
+			"latitude": 40.403170851320425,
+			"longitude": -3.6233246078850967
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Valdebernardo (línea 9)  Bus: 8, 71, 130, N8, E4, 100",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9:30 a 21 horas Fines de semana y festivos: de 9:30 a 20 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores El Almendro"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4724546-centro-municipal-mayores-henar.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "4724546",
+		"title": "Centro Municipal de Mayores El Henar",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f36b4e1e9b187110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/PinarRey"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28033",
+			"street-address": "CALLE ABIZANDA 8"
+		},
+		"location": {
+			"latitude": 40.47746103215973,
+			"longitude": -3.6500936299906956
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 9  Metro: Parque de Santa María, Hortaleza (línea 4)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20 horas.  Sábados, de 10 a 14 y de 16 a 20:30 horas. Domingos y festivos, de 10 a 14 horas.  Cierra mes de agosto y los días 24, 25, 31 de diciembre y el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores El Henar"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11756-centro-municipal-mayores-pozo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11756",
+		"title": "Centro Municipal de Mayores El Pozo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=205f66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/Entrevias"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28053",
+			"street-address": "AVENIDA GLORIETAS 19"
+		},
+		"location": {
+			"latitude": 40.37381624358889,
+			"longitude": -3.6599325731670977
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 20 horas. El. horario de verano difiere por estar ubicado en un centro cultural.",
+			"services": "Programas socioculturales, ocupacionales o formativos, con el objetivo de favorecer el envejecimiento activo, la calidad de vida, la relación y la convivencia, a través de distintas y variadas actividades o talleres gratuitos. Se planifican con la participación de las Juntas Directivas y se dinamizan por el servicio de animación sociocultural, del que disponen todos los Centros. Actividades de programación continua: manuales, culturales, artísticas, de mantenimiento físico, recreativas o de educación digital básica. Actividades puntuales o esporádicas: conferencias, carnavales, excursiones, visitas culturales o viajes, etc.  Servicio de cafetería, cuyo objetivo es favorecer las relaciones personales.  Espacios de nuevas tecnologías (disponibilidad de aulas informáticas) que tienen como objetivo favorecer la formación informática. Son gratuitos.  Servicios Sala de lectura, con el objetivo de favorecer el acceso a la información y servir de apoyo a la lectura. Es un espacio de acceso abierto y de carácter gratuita. Prensa diaria, en formato digital o en formato papel.  Otros servicios, que tienen como objetivo favorecer el envejecimiento activo y el bienestar, con precios asequibles: peluquería.",
+			"organization-name": "Centro Municipal de Mayores El Pozo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11709-centro-municipal-mayores-entrevias.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11709",
+		"title": "Centro Municipal de Mayores Entrevías",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=767f66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/Entrevias"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28053",
+			"street-address": "CALLE YUSTE 8"
+		},
+		"location": {
+			"latitude": 40.376423120136536,
+			"longitude": -3.6692759400026755
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguiente enlace",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Programas socioculturales, ocupacionales o formativos, con el objetivo de favorecer el envejecimiento activo, la calidad de vida, la relación y la convivencia, a través de distintas y variadas actividades o talleres gratuitos. Se planifican con la participación de las Juntas Directivas y se dinamizan por el servicio de animación sociocultural, del que disponen todos los Centros. Actividades de programación continua: manuales, culturales, artísticas, de mantenimiento físico, recreativas o de educación digital básica. Actividades puntuales o esporádicas: conferencias, carnavales, excursiones, visitas culturales o viajes, etc.  Servicios de comedor/cafetería, cuyo objetivo es favorecer las relaciones personales y una alimentación equilibrada, ofreciendo menús variados a precios asequibles.  Espacios de nuevas tecnologías (disponibilidad de aulas informáticas) que tienen como objetivo favorecer la formación informática. Son gratuitos.  Servicios Sala de lectura, con el objetivo de favorecer el acceso a la información y servir de apoyo a la lectura. Es un espacio de acceso abierto y de carácter gratuita. Prensa diaria, en formato digital o en formato papel. Otros servicios, que tienen como objetivo favorecer el envejecimiento activo y el bienestar, con precios asequibles: peluquería y podología",
+			"organization-name": "Centro Municipal de Mayores Entrevías"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11691-centro-municipal-mayores-evangelios.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11691",
+		"title": "Centro Municipal de Mayores Evangelios",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cc9f66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Almendrales"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28026",
+			"street-address": "CALLE EVANGELIOS 42"
+		},
+		"location": {
+			"latitude": 40.38319815617648,
+			"longitude": -3.701618054277774
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Usera (línea 6)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, de nuevas tecnologías (informática y de telefonía móvil), deportivas y preventivas y de autocuidado. Club de Senderismo, Club de Lectura y Grupo de Mujeres.  Equipo de animación: cmmusera.blogspot.com   Facebook   Instagram   Youtube",
+			"organization-name": "Centro Municipal de Mayores Evangelios"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/39260-centro-municipal-mayores-francisco-goya.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "39260",
+		"title": "Centro Municipal de Mayores Francisco de Goya",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7944598d1351c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/Buenavista"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28044",
+			"street-address": "CALLE ALFREDO ALEIX 1"
+		},
+		"location": {
+			"latitude": 40.36877070529469,
+			"longitude": -3.7535272763200083
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, comedor y cafetería, prensa diaria y sala de lecturas, aula de informática y zona wifi &amp;ldquo;Madrid&amp;rdquo;. Se desarrollan talleres y actividades culturales y manuales, artísticas, de mantenimiento físico y preventivas ,de autocuidado, actividades formativas de educación digital básica e informática.",
+			"organization-name": "Centro Municipal de Mayores Francisco de Goya"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/110017-centro-municipal-mayores-ginzo-limia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "110017",
+		"title": "Centro Municipal de Mayores Ginzo de Limia",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e89515a11a81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/LaPaz"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28034",
+			"street-address": "CALLE GINZO DE LIMIA 66"
+		},
+		"location": {
+			"latitude": 40.48443336830084,
+			"longitude": -3.707221894704915
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Herrera Oria",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 21 horas  Fines de semana y festivos: de 9:30 a 20:30 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, prensa, cafetería, y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Ginzo de Limia"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/25871-centro-municipal-mayores-huerta-salud.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "25871",
+		"title": "Centro Municipal de Mayores Huerta de la Salud",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ea02e35bba51c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/PinarRey"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28033",
+			"street-address": "CALLE MAR DE LAS ANTILLAS 10"
+		},
+		"location": {
+			"latitude": 40.47571688103069,
+			"longitude": -3.64667257750353
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Parque de Santa María, San Lorenzo (línea 4)  Bus: 9, 72",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20 horas.  Sábados, domingos y festivos, de 10 a 14 y de 16 a 20:30 horas. Cierra los días 24, 25, 31 de diciembre y el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Huerta de la Salud"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/87027-centro-municipal-mayores-infante-don-juan.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "87027",
+		"title": "Centro Municipal de Mayores Infante Don Juan",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=939fdef5ab41c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Arguelles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28008",
+			"street-address": "PASEO MORET 3 C"
+		},
+		"location": {
+			"latitude": 40.433231729637,
+			"longitude": -3.723156624820124
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Moncloa (líneas 3 y 6)",
+			"accesibility": "1,5",
+			"schedule": "De lunes a domingo, de 9 a 20:45 horas.",
+			"services": "Se ofrecen servicios de podología, peluquería, comedor y cafetería, prensa, wifi, servicio de fisioterapia preventiva, servicio de animación sociocultural con el desarrollo de talleres en las siguientes áreas: físicas, culturales, artísticas, plásticas,  emocionales y de desarrollo de nuevas tecnologías e informática. Además de actividades culturales y programación mensual de interés para los usuarios del centro, se desarrolla también el programa de terapia ocupacional con talleres de estimulación cognitiva, gerontogimnasia y manualidades.",
+			"organization-name": "Centro Municipal de Mayores Infante Don Juan"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/176580-centro-municipal-mayores-isaac-rabin.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "176580",
+		"title": "Centro Municipal de Mayores Isaac Rabin",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8cb47a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz/Barrio/Vinateros"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28030",
+			"street-address": "AVENIDA MORATALAZ 134"
+		},
+		"location": {
+			"latitude": 40.40656028475513,
+			"longitude": -3.6466776174792517
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Artilleros (línea 9)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 9 a 20 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas, salidas y visitas culturales. Apoyo psicosocial. Talleres de apoyo a la soledad no deseada. Talleres de memoria preventivos (incompatibles con cualquier tipo de deterioro cognitivo). Gimnasia adaptada, para personas con movilidad reducida (tras valoración previa).",
+			"organization-name": "Centro Municipal de Mayores Isaac Rabin"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/122352-centro-municipal-mayores-islas-filipinas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "122352",
+		"title": "Centro Municipal de Mayores Islas Filipinas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d34e8899fc81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/Ventas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28017",
+			"street-address": "CALLE NUESTRA SE&amp;Ntilde;ORA DEL VILLAR 6"
+		},
+		"location": {
+			"latitude": 40.42343352863466,
+			"longitude": -3.6518288644365704
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 110, 113, 210",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de Animación Sociocultural, Podología, Peluquería, Prensa, zona Wifi, Comedor y Cafetería, Biblioteca y Voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Islas Filipinas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11695-centro-municipal-mayores-islas-jarvi.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11695",
+		"title": "Centro Municipal de Mayores Islas Jarvi",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=69ef66051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/Valverde"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28034",
+			"street-address": "CALLE MADERUELO 5"
+		},
+		"location": {
+			"latitude": 40.49222518870493,
+			"longitude": -3.6879392825460764
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 66, 124",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 21 horas  Fines de semana: de 9:30 a 20:30 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, cafetería, y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Islas Jarvi"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11762-centro-municipal-mayores-jose-manuel-bringas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11762",
+		"title": "Centro Municipal de Mayores José Manuel Bringas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bf0066051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Orcasitas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "CALLE CAMINO VIEJO DE VILLAVERDE 26"
+		},
+		"location": {
+			"latitude": 40.370156708128164,
+			"longitude": -3.7109195161638535
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Renfe: Orcasitas",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi y se desarrollan talleres y actividades culturales y manuales, artísticas, de nuevas tecnologías (informática y de telefonía móvil, trámites digitales y redes), deportivas y preventivas y de autocuidado. Club de Senderismo, Club de Lectura y Grupo de Mujeres.  Equipo de animación: cmmusera.blogspot.com   Facebook   Instagram   Youtube",
+			"organization-name": "Centro Municipal de Mayores José Manuel Bringas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11725-centro-municipal-mayores-jose-ortuno-ponce.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11725",
+		"title": "Centro Municipal de Mayores José Ortuño Ponce",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=063066051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/VillaverdeAltoCH"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28021",
+			"street-address": "CALLE JOSE ORTUÑO PONCE 3"
+		},
+		"location": {
+			"latitude": 40.34585250150158,
+			"longitude": -3.7053580531338266
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, podología, fisioterapia preventiva, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores José Ortuño Ponce"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/10608182-centro-municipal-mayores-estrella-carmen-martin-gaite.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "10608182",
+		"title": "Centro Municipal de Mayores La Estrella - Carmen Martín Gaite",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5db2ae19a6b41610VgnVCM1000001d4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/Estrella"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28007",
+			"street-address": "CALLE PEZ AUSTRAL 6"
+		},
+		"location": {
+			"latitude": 40.41334700919547,
+			"longitude": -3.6662555270188837
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Sainz de Baranda (líneas 6 y 9)",
+			"accesibility": "2",
+			"schedule": "De lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, wifi. Se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado. Señalización braille en ascensores.",
+			"organization-name": "Centro Municipal de Mayores La Estrella - Carmen Martín Gaite"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11741-centro-municipal-mayores-guindalera.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11741",
+		"title": "Centro Municipal de Mayores La Guindalera",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=373b79262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Guindalera"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28028",
+			"street-address": "CALLE PILAR DE ZARAGOZA 28"
+		},
+		"location": {
+			"latitude": 40.43356736283948,
+			"longitude": -3.66920246564141
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Diego de León (líneas 4, 5, 6)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 9 a 21 horas (invierno) y de 9 a 20 horas (verano). Fines de semana y festivos de 10 a 20 horas. Cerrado los días 24, 25 y 31 de diciembre y 1 y 6 de enero, así como Jueves y Viernes Santo.",
+			"services": "Servicio de animación sociocultural, prensa, comedor y cafetería, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores La Guindalera"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/112266-centro-municipal-mayores-platanera.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "112266",
+		"title": "Centro Municipal de Mayores La Platanera",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3fb515a11a81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/Butarque"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28021",
+			"street-address": "CALLE CONCEPCION DE LA OLIVA 1"
+		},
+		"location": {
+			"latitude": 40.35399165988997,
+			"longitude": -3.683323950756455
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Renfe: Villaverde Bajo",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, podología, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores La Platanera"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11693-centro-municipal-mayores-remonta.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11693",
+		"title": "Centro Municipal de Mayores La Remonta",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c5066051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan/Barrio/Valdeacederas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28039",
+			"street-address": "PLAZA REMONTA 13"
+		},
+		"location": {
+			"latitude": 40.463479776862705,
+			"longitude": -3.697709529575169
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Valdeacederas (línea 1)",
+			"accesibility": "1",
+			"schedule": "De lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, nuevas tecnologías (informática, Internet y manejo de móviles), deportivas y preventivas y de autocuidado. Programa de voluntariado. Señalética con sistema braille.",
+			"organization-name": "Centro Municipal de Mayores La Remonta"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11742-centro-municipal-mayores-vaguada.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11742",
+		"title": "Centro Municipal de Mayores La Vaguada",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a28066051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/ElPilar"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28029",
+			"street-address": "AVENIDA MONFORTE DE LEMOS 38"
+		},
+		"location": {
+			"latitude": 40.47901843755158,
+			"longitude": -3.7091212669177596
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Barrio del Pilar",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 21 horas  Fines de semana y festivos: de 9:30 a 20:30 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, fisioterapia preventiva, y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores La Vaguada"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/133983-centro-municipal-mayores-leneros.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "133983",
+		"title": "Centro Municipal de Mayores Leñeros",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=85e515a11a81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan/Barrio/BellasVistas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28039",
+			"street-address": "CALLE LEÑEROS 25"
+		},
+		"location": {
+			"latitude": 40.453994535629725,
+			"longitude": -3.7092929507527352
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Francos Rodríguez (línea 7)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, nuevas tecnologías (informática, Internet y manejo de móviles), deportivas y preventivas y de autocuidado. Programa de voluntariado. Señalética con sistema braille.",
+			"organization-name": "Centro Municipal de Mayores Leñeros"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4804908-centro-municipal-mayores-loyola-palacio.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "4804908",
+		"title": "Centro Municipal de Mayores Loyola de Palacio",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=98860e22fda18110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/SanFermin"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "CALLE SILVINA 10"
+		},
+		"location": {
+			"latitude": 40.366316694334024,
+			"longitude": -3.6916599102099963
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro:  San Fermín-Orcasur (línea 3)",
+			"accesibility": "1",
+			"schedule": "De lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, de nuevas tecnologías (informática y de telefonía móvil), deportivas y preventivas y de autocuidado. Envejecimiento activo y abordaje de la soledad. Club de Senderismo, Club de Lectura y Grupo de Mujeres.  Equipo de animación: cmmusera.blogspot.com   Facebook   Instagram   Youtube",
+			"organization-name": "Centro Municipal de Mayores Loyola de Palacio"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11687-centro-municipal-mayores-luca-tena.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11687",
+		"title": "Centro Municipal de Mayores Luca de Tena",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f8a066051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela/Barrio/PalosFrontera"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28045",
+			"street-address": "CALLE CANARIAS 17"
+		},
+		"location": {
+			"latitude": 40.40242416544921,
+			"longitude": -3.6954440062549017
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. y estar empadronado en el distrito de Arganzuela salvo en casos excepcionales. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Palos de la Frontera (línea 3)",
+			"accesibility": "1",
+			"schedule": "Calle Canarias, 17: De lunes a domingo, de 9 a 20 horas.  Calle Canarias, 19: De lunes a viernes, de 9 a 20 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, peluquería, prensa, comedor y cafetería, biblioteca, wifi, se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas, preventivas y de autocuidado. Zona wifi",
+			"organization-name": "Centro Municipal de Mayores Luca de Tena"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/108513-centro-municipal-mayores-lucero.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "108513",
+		"title": "Centro Municipal de Mayores Lucero",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=db0615a11a81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina/Barrio/Lucero"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28047",
+			"street-address": "CALLE CASTROSERNA 4"
+		},
+		"location": {
+			"latitude": 40.40175670692294,
+			"longitude": -3.749146943988855
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Lucero (línea 6)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20:30 horas Fines de semana y festivos, de 10 a 13:45 horas y de 16 a 19:45 horas",
+			"services": "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnólogicas, excursiones, visitas culturales, recreativas y de ocio); talleres, actividades preventivas y de autocuidado; podología; peluquería; Ccmedor y cafetería; biblioteca, sala de lectura y prensa diaria.  Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Lucero"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/20241-centro-municipal-mayores-luis-vives.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "20241",
+		"title": "Centro Municipal de Mayores Luis Vives",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3132e35bba51c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/PuebloNuevo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28037",
+			"street-address": "CALLE HERMANOS GARCIA NOBLEJAS 160"
+		},
+		"location": {
+			"latitude": 40.42396009441367,
+			"longitude": -3.6285825877315347
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: García Noblejas (línea 7)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, peluquería, prensa, zona Wifi, voluntariado y se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Luis Vives"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/122369-centro-municipal-mayores-maestro-alonso.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "122369",
+		"title": "Centro Municipal de Mayores Maestro Alonso",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=dd5b79262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/FuenteBerro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28028",
+			"street-address": "CALLE MAESTRO ALONSO 6"
+		},
+		"location": {
+			"latitude": 40.4293927571053,
+			"longitude": -3.664846244443566
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Ventas (líneas 2, 5)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, 9 a 21 horas.  Cerrado sábados y festivos.",
+			"services": "Servicio de animación sociocultural y prensa, y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Maestro Alonso"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6166670-centro-municipal-mayores-manuel-alexandre.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "6166670",
+		"title": "Centro Municipal de Mayores Manuel Alexandre",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d74bff0f9ae32310VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/Ventas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28017",
+			"street-address": "AVENIDA DAROCA 50"
+		},
+		"location": {
+			"latitude": 40.431386380971894,
+			"longitude": -3.6590535229397676
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: El Carmen (línea 5)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología,peluquería, prensa, gimnasio, zona wifi, biblioteca, comedor y cafetería, voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Manuel Alexandre"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11723-centro-municipal-mayores-manzanares.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11723",
+		"title": "Centro Municipal de Mayores Manzanares",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4fc066051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/CasaCampo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28008",
+			"street-address": "CALLE LANZADA 2"
+		},
+		"location": {
+			"latitude": 40.42936482463419,
+			"longitude": -3.733660595746005
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1,5",
+			"schedule": "De lunes a domingo, de 9 a 20:45 horas.",
+			"services": "Se ofrecen servicios de podología, peluquería, comedor y cafetería, prensa, wifi, servicio de fisioterapia preventiva, servicio de animación sociocultural con el desarrollo de talleres en las siguientes áreas: físicas, culturales, artísticas, plásticas, emocionales y de desarrollo de nuevas tecnologías e informática. Además de actividades culturales y programación mensual de interés para los usuarios del centro, se desarrolla también el programa de terapia ocupacional con talleres de estimulación cognitiva, gerontogimnasia y manualidades.",
+			"organization-name": "Centro Municipal de Mayores Manzanares"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11587020-centro-municipal-mayores-margarita-salas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11587020",
+		"title": "Centro Municipal de Mayores Margarita Salas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=03007dae756be710VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina/Barrio/LasAguilas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28044",
+			"street-address": "CALLE BLAS CABRERA 145"
+		},
+		"location": {
+			"latitude": 40.37870105977386,
+			"longitude": -3.7640046840469705
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Renfe Cercanías: Aluche (C5)  Metro: Aluche (línea 5)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20:30 horas Fines de semana y festivos, de 10 a 13:45 horas y de 16 a 19:45 horas",
+			"services": "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnológicas, excursiones, visitas culturales, recreativas y de ocio); talleres, actividades preventivas y de autocuidado; podología; comedor y cafetería; biblioteca, sala de lectura y prensa diaria.",
+			"organization-name": "Centro Municipal de Mayores Margarita Salas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11758-centro-municipal-mayores-maria-zambrano.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11758",
+		"title": "Centro Municipal de Mayores María Zambrano",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=adabae7cb2e4f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/SanCristobal"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28021",
+			"street-address": "PLAZA PINAZO 1"
+		},
+		"location": {
+			"latitude": 40.3433403501017,
+			"longitude": -3.6909464406045163
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, podología, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores María Zambrano"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/143677-centro-municipal-mayores-miguel-delibes.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "143677",
+		"title": "Centro Municipal de Mayores Miguel Delibes",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bb9fba61e681c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/LosRosales"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "AVENIDA FELICIDAD 26"
+		},
+		"location": {
+			"latitude": 40.35881548932917,
+			"longitude": -3.688387122923563
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Ciudad de los Angeles",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, podología, fisioterapia preventiva, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, billares, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Miguel Delibes"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12678394-centro-municipal-mayores-mirasierra.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "12678394",
+		"title": "Centro Municipal de Mayores Mirasierra",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2afca11cf75d4910VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/Mirasierra"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28034",
+			"street-address": "CALLE PEÑA VIEJA 4"
+		},
+		"location": {
+			"latitude": 40.494538639532976,
+			"longitude": -3.7064043572518033
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Paco de Lucía (línea 9)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 21 horas  Fines de semana y festivos: de 9:30 a 20:30 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, fisioterapia preventiva, prensa, comedor y cafetería, y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Mirasierra"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11702-centro-municipal-mayores-monsenor-oscar-romero.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11702",
+		"title": "Centro Municipal de Mayores Monseñor Óscar Romero",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=eb1166051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/VistaAlegre"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28025",
+			"street-address": "CALLE MONSEÑOR OSCAR ROMERO 42"
+		},
+		"location": {
+			"latitude": 40.381862571508485,
+			"longitude": -3.7444667522137736
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Eugenia de Montijo (línea 5)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, comedor y cafetería, prensa diaria y sala de lecturas, aula de informática y zona wifi &amp;ldquo;Madrid&amp;rdquo;. Se desarrollan talleres y actividades culturales y manuales, artísticas, de mantenimiento físico y preventivas ,de autocuidado, actividades formativas de educación digital básica e informática.",
+			"organization-name": "Centro Municipal de Mayores Monseñor Óscar Romero"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/190713-centro-municipal-mayores-moratalaz.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "190713",
+		"title": "Centro Municipal de Mayores Moratalaz",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=78c3906420a40110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz/Barrio/MediaLegua"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28030",
+			"street-address": "CALLE ARROYO BELINCOSO 13"
+		},
+		"location": {
+			"latitude": 40.40993532266944,
+			"longitude": -3.653014612073819
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Vinateros (línea 9)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 9 a 20 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas, salidas y visitas culturales. Apoyo psicosocial, Talleres de apoyo a la soledad no deseada, Talleres de memoria preventivos (incompatibles con cualquier tipo de deterioro cognitivo). Gimnasia adaptada, para personas con movilidad reducida (tras valoración previa).",
+			"organization-name": "Centro Municipal de Mayores Moratalaz"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6298422-centro-municipal-mayores-navacerrada.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "6298422",
+		"title": "Centro Municipal de Mayores Navacerrada",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=aa5611d22af05310VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/Numancia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28038",
+			"street-address": "CALLE PUERTO DE NAVACERRADA 1"
+		},
+		"location": {
+			"latitude": 40.40134962897248,
+			"longitude": -3.6570619169829164
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulte los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Programas socioculturales, ocupacionales o formativos, con el objetivo de favorecer el envejecimiento activo, la calidad de vida, la relación y la convivencia, a través de distintas y variadas actividades o talleres gratuitos. Se planifican con la participación de las Juntas Directivas y se dinamizan por el servicio de animación sociocultural, del que disponen todos los Centros. Actividades de programación continua: manuales, culturales, artísticas, de mantenimiento físico, recreativas o de educación digital básica. Actividades puntuales o esporádicas: conferencias, carnavales, excursiones, visitas culturales o viajes, etc. Servicio de cafetería y comedor de mayores. Servicio de podología, previa cita.",
+			"organization-name": "Centro Municipal de Mayores Navacerrada"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11710-centro-municipal-mayores-nicanor-barroso.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11710",
+		"title": "Centro Municipal de Mayores Nicanor Barroso",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=324166051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz/Barrio/Fontarron"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28030",
+			"street-address": "CALLE ENCOMIENDA DE PALACIOS 190"
+		},
+		"location": {
+			"latitude": 40.398887951351846,
+			"longitude": -3.642025108739988
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, de 9 a 20 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, fisioterapia preventiva. Se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas, salidas y visitas culturales. Apoyo psicosocial, talleres de apoyo a la soledad no deseada, talleres de memoria preventivos (incompatibles con cualquier tipo de deterioro cognitivo) y gimnasia adaptada, para personas con movilidad reducida (tras valoración previa).",
+			"organization-name": "Centro Municipal de Mayores Nicanor Barroso"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/142751-centro-municipal-mayores-nicolas-salmeron.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "142751",
+		"title": "Centro Municipal de Mayores Nicolás Salmerón",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=b802ba61e681c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin/Barrio/CiudadJardin"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28002",
+			"street-address": "CALLE MANTUANO 51"
+		},
+		"location": {
+			"latitude": 40.44834125150792,
+			"longitude": -3.6761992414203526
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Cruz del Rayo (línea 9), Prosperidad (línea 4)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, fines de semana y festivos: de 9 a 20:30 horas.",
+			"services": "Servicios: Animación sociocultural &amp;ndash; Podología &amp;ndash; Peluquería &amp;ndash; Cafetería y Comedor &amp;ndash; Prensa -Wifi  Actividades y Talleres: Físicas, culturales, formativas, tecnológicas, escénicas, psicosociales, plásticas, ambientales, visitas culturales, charlas informativas y salidas.",
+			"organization-name": "Centro Municipal de Mayores Nicolás Salmerón"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/49113-centro-municipal-mayores-nuestra-senora-merced.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "49113",
+		"title": "Centro Municipal de Mayores Nuestra Señora de la Merced",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cf64598d1351c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/Canillas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28043",
+			"street-address": "PLAZA NUESTRA SEÑORA DEL TRANSITO 12"
+		},
+		"location": {
+			"latitude": 40.46032774722798,
+			"longitude": -3.64860083390915
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Esperanza (línea 4)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 20 horas.  Sábados: de 10 a 14 y 16 a 20:30 horas.  Domingos y festivos, de 10 a 14 horas.  Cierra mes de agosto y los días 24, 25, 31 de diciembre y el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Nuestra Señora de la Merced"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/64194-centro-municipal-mayores-nuestra-senora-angeles.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "64194",
+		"title": "Centro Municipal de Mayores Nuestra Señora de los Ángeles",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1694598d1351c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/LosAngeles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "CALLE ARAMA 1"
+		},
+		"location": {
+			"latitude": 40.351866690488684,
+			"longitude": -3.6974029071664085
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, podología, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Nuestra Señora de los Ángeles"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/113094-centro-municipal-mayores-nuestra-senora-carmen.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "113094",
+		"title": "Centro Municipal de Mayores Nuestra Señora del Carmen",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c6be8899fc81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/Canillas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28043",
+			"street-address": "CALLE RAMON POWER 26"
+		},
+		"location": {
+			"latitude": 40.46337730558992,
+			"longitude": -3.631515434596136
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Canillas (línea 4)  Bus: 73, 120, 122",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20 horas.  Sábados, domingos y festivos, de 10 a 14 y de 16 a 20:30 horas.  Cierra los días 24, 25, 31 de diciembre y el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Nuestra Señora del Carmen"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/118135-centro-municipal-mayores-orcasur.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "118135",
+		"title": "Centro Municipal de Mayores Orcasur",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1dde8899fc81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Orcasur"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "AVENIDA ORCASUR 60"
+		},
+		"location": {
+			"latitude": 40.368062289350405,
+			"longitude": -3.700121152497799
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 78, 116  Renfe: Orcasitas",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, de nuevas tecnologías (informática y de telefonía móvil, trámites digitales para la vida diaria), deportivas y preventivas y de autocuidado. Bienestar emocional desde la igualdad Club de Senderismo, Club de Lectura y Grupo de Mujeres.  Equipo de animación: cmmusera.blogspot.com   Facebook   Instagram   Youtube",
+			"organization-name": "Centro Municipal de Mayores Orcasur"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4706191-centro-municipal-mayores-pablo-casals.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "4706191",
+		"title": "Centro Municipal de Mayores Pablo Casals",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6eb2ba228f3c6110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Amposta"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28037",
+			"street-address": "CALLE POBLADURA DEL VALLE 13 PLANTA PRIMERA"
+		},
+		"location": {
+			"latitude": 40.425893873545704,
+			"longitude": -3.620043375246609
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Simancas (línea 7), San Blas (línea 7)",
+			"accesibility": "1",
+			"schedule": "Horario del centro: Lunes a domingo, de 9:30 a  20:30 horas.  Horario Junta Directiva: Martes y jueves de 10:30 a 13 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, y se desarrollan talleres y actividades socioculturales, de expresión corporal, formativas, culturales,  artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Pablo Casals"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11708-centro-municipal-mayores-pablo-neruda.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11708",
+		"title": "Centro Municipal de Mayores Pablo Neruda",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=886166051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/PalomerasSureste"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28018",
+			"street-address": "CALLE GERARDO DIEGO 8"
+		},
+		"location": {
+			"latitude": 40.385232075465986,
+			"longitude": -3.644368951945781
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Programas socioculturales, ocupacionales o formativos, con el objetivo de favorecer el envejecimiento activo, la calidad de vida, la relación y la convivencia, a través de distintas y variadas actividades o talleres gratuitos. Se planifican con la participación de las Juntas Directivas y se dinamizan por el servicio de animación sociocultural, del que disponen todos los Centros. Actividades de programación continua: manuales, culturales, artísticas, de mantenimiento físico, recreativas o de educación digital básica. Actividades puntuales o esporádicas: conferencias, carnavales, excursiones, visitas culturales o viajes, etc.  Servicios de comedor/cafetería, cuyo objetivo es favorecer las relaciones personales y una alimentación equilibrada, ofreciendo menús variados a precios asequibles.  Espacios de nuevas tecnologías (disponibilidad de aulas informáticas) que tienen como objetivo favorecer la formación informática. Son gratuitos.  Servicios Sala de lectura, con el objetivo de favorecer el acceso a la información y servir de apoyo a la lectura. Es un espacio de acceso abierto y de carácter gratuita. Prensa diaria, en formato digital o en formato papel.  Otros servicios, que tienen como objetivo favorecer el envejecimiento activo y el bienestar, con precios asequibles: peluquería y podología.",
+			"organization-name": "Centro Municipal de Mayores Pablo Neruda"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4724726-centro-municipal-mayores-pamplona.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "4724726",
+		"title": "Centro Municipal de Mayores Pamplona",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2937de75fd187110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan/Barrio/BellasVistas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28039",
+			"street-address": "CALLE PAMPLONA 8"
+		},
+		"location": {
+			"latitude": 40.45404034714549,
+			"longitude": -3.7046602500182977
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Estrecho (línea 1)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, nuevas tecnologías (informática, Internet y manejo de móviles), deportivas y preventivas y de autocuidado. Programa de voluntariado. Señalética con sistema braille.",
+			"organization-name": "Centro Municipal de Mayores Pamplona"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11743-centro-municipal-mayores-penagrande.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11743",
+		"title": "Centro Municipal de Mayores Peñagrande",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=de8166051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/PenaGrande"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28035",
+			"street-address": "CALLE ISLA DE ONS 28"
+		},
+		"location": {
+			"latitude": 40.47986061262994,
+			"longitude": -3.7225149414093233
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes: de 9 a 21 horas  Fines de semana y festivos: de 9:30 a 20:30 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería,  y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Peñagrande"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11747-centro-municipal-mayores-pinar-rey.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11747",
+		"title": "Centro Municipal de Mayores Pinar del Rey",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7bd166051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/Canillas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28043",
+			"street-address": "CALLE LOPEZ DE HOYOS 329"
+		},
+		"location": {
+			"latitude": 40.465657886064186,
+			"longitude": -3.655552485532253
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 9, 72, 73",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20 horas.  Sábado, de 10 a 14 y 16 a 20:30 horas.  Domingo, cerrado.  Festivos, de 10 a 14 horas.  Cierra los días 24, 25, 31 de diciembre y el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Pinar del Rey"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11690-centro-municipal-mayores-prosperidad-santa-hortensia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11690",
+		"title": "Centro Municipal de Mayores Prosperidad Santa Hortensia",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6e4266051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin/Barrio/Prosperidad"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28002",
+			"street-address": "CALLE SANTA HORTENSIA 15"
+		},
+		"location": {
+			"latitude": 40.4447567589916,
+			"longitude": -3.669168740467039
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Prosperidad (línea 4)",
+			"accesibility": "1",
+			"schedule": "De lunes a viernes, fines de semana y festivos, de 9 a 20 horas. Agosto: fines de semana cerrado.",
+			"services": "Servicios: Animación sociocultural &amp;ndash; Podología &amp;ndash; Peluquería &amp;ndash; Cafetería y Comedor &amp;ndash; Prensa -Wifi  Actividades y Talleres: Físicas, culturales, formativas, tecnológicas, escénicas, psicosociales, plásticas, ambientales, visitas culturales, charlas informativas y salidas.",
+			"organization-name": "Centro Municipal de Mayores Prosperidad Santa Hortensia"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11712-centro-municipal-mayores-principe-asturias.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11712",
+		"title": "Centro Municipal de Mayores Príncipe de Asturias",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=182266051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/PuebloNuevo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28037",
+			"street-address": "CALLE HERMANOS GARCIA NOBLEJAS 14"
+		},
+		"location": {
+			"latitude": 40.43644651057092,
+			"longitude": -3.6372924261150033
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Ciudad Lineal (línea 5)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, prensa, cafetería y zona WIFI y voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores Príncipe de Asturias"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11724-centro-municipal-mayores-pio-baroja.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11724",
+		"title": "Centro Municipal de Mayores Pío Baroja",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c10266051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/NinoJesus"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28009",
+			"street-address": "CALLE PIO BAROJA 8"
+		},
+		"location": {
+			"latitude": 40.413417443948205,
+			"longitude": -3.6745551353834545
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Sáinz de Baranda (líneas 6 y 9) / Ibiza (línea 9)",
+			"accesibility": "2",
+			"schedule": "De lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 21 horas. Cerrado, 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, wifi. Se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado. Señalización braille en ascensores.",
+			"organization-name": "Centro Municipal de Mayores Pío Baroja"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11703-centro-municipal-mayores-roger-flor.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11703",
+		"title": "Centro Municipal de Mayores Roger de Flor",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b9266051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/SanIsidro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28019",
+			"street-address": "PLAZA ROGER DE FLOR 1"
+		},
+		"location": {
+			"latitude": 40.39398872632115,
+			"longitude": -3.733224652643564
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, comedor y cafetería, prensa diaria y sala de lecturas, aula de informática y zona wifi &amp;ldquo;Madrid&amp;rdquo;. Se desarrollan talleres y actividades culturales y manuales, artísticas, de mantenimiento físico y preventivas ,de autocuidado, actividades formativas de educación digital básica e informática.",
+			"organization-name": "Centro Municipal de Mayores Roger de Flor"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11749-centro-municipal-mayores-san-benito.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11749",
+		"title": "Centro Municipal de Mayores San Benito",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=51c266051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/ApostolSantiago"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28033",
+			"street-address": "CALLE CARRION DE LOS CONDES 73"
+		},
+		"location": {
+			"latitude": 40.4760846979538,
+			"longitude": -3.6581195337045274
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 7, 29, 129",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20 horas.  Sábado, de 10 a 14 y de 16 a 20:30 horas.  Domingos y festivos, de 10 a 14 horas.  Cierra mes de agosto y los días 24, 25, 31 de diciembre y el 1 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores San Benito"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/49541-centro-municipal-mayores-san-diego.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "49541",
+		"title": "Centro Municipal de Mayores San Diego",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6cb4598d1351c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/PalomerasBajas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28018",
+			"street-address": "CALLE JAVIER DE MIGUEL 10"
+		},
+		"location": {
+			"latitude": 40.3886888079207,
+			"longitude": -3.6635910190518923
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Fines de semana y festivos, de 10 a 20 horas.",
+			"services": "Programas socioculturales, ocupacionales o formativos, con el objetivo de favorecer el envejecimiento activo, la calidad de vida, la relación y la convivencia, a través de distintas y variadas actividades o talleres gratuitos. Se planifican con la participación de las Juntas Directivas y se dinamizan por el servicio de animación sociocultural, del que disponen todos los Centros. Actividades de programación continua: manuales, culturales, artísticas, de mantenimiento físico, recreativas o de educación digital básica. Actividades puntuales o esporádicas: conferencias, carnavales, excursiones, visitas culturales o viajes, etc.  Servicios de comedor/cafetería, cuyo objetivo es favorecer las relaciones personales y una alimentación equilibrada, ofreciendo menús variados a precios asequibles.  Espacios de nuevas tecnologías (disponibilidad de aulas informáticas) que tienen como objetivo favorecer la formación informática. Son gratuitos.  Servicios Sala de lectura, con el objetivo de favorecer el acceso a la información y servir de apoyo a la lectura. Es un espacio de acceso abierto y de carácter gratuita. Prensa diaria, en formato digital o en formato papel. Otros servicios, que tienen como objetivo favorecer el envejecimiento activo y el bienestar, con precios asequibles: peluquería y podología.",
+			"organization-name": "Centro Municipal de Mayores San Diego"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11706-centro-municipal-mayores-san-filiberto.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11706",
+		"title": "Centro Municipal de Mayores San Filiberto",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a7e266051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Moscardo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28026",
+			"street-address": "CALLE SAN FILIBERTO 7 PLANTA BAJO"
+		},
+		"location": {
+			"latitude": 40.38582218365411,
+			"longitude": -3.7151270393761373
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Plaza Elíptica (línea 6)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, de nuevas tecnologías (correo, redes sociales e informática y telefonía móvil ytrámites digitales para la vida diaria), deportivas y preventivas y de autocuidado. Club de Senderismo, Club de Lectura y Grupo de Mujeres.  Equipo de animación: cmmusera.blogspot.com   Facebook   Instagram   Youtube",
+			"organization-name": "Centro Municipal de Mayores San Filiberto"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11744-centro-municipal-mayores-san-francisco.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11744",
+		"title": "Centro Municipal de Mayores San Francisco",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fd0366051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28005",
+			"street-address": "CALLE JERTE 3 entrada por calle San Buenaventura, 3"
+		},
+		"location": {
+			"latitude": 40.41077050441227,
+			"longitude": -3.715552056000273
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Bus: 3, 148  Bicimad: plaza de San Francisco, 5",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 20 horas.  Fines de semana y festivos: de 11 a 20 horas.  Se cierra el 24, 25 y 31 de diciembre y el 1 y 6 de enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, tecnológicas o informáticas, deportivas y preventivas y de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores San Francisco"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11759-centro-municipal-mayores-san-juan-bautista.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11759",
+		"title": "Centro Municipal de Mayores San Juan Bautista",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=443366051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/SanJuanBautista"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28043",
+			"street-address": "CALLE BUESO PINEDA 8"
+		},
+		"location": {
+			"latitude": 40.45256380296372,
+			"longitude": -3.658038721342496
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Arturo Soria (línea 4)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, zona Wifi, comedor y cafetería, fisioterapia preventiva y voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+			"organization-name": "Centro Municipal de Mayores San Juan Bautista"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6099291-centro-municipal-mayores-san-luciano.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "6099291",
+		"title": "Centro Municipal de Mayores San Luciano",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c4fa9b90f2a60310VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/LosAngeles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "CALLE SAN LUCIANO 16"
+		},
+		"location": {
+			"latitude": 40.363033506032004,
+			"longitude": -3.698135947515424
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Ciudad de los Ángeles (línea 3)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, peluquería, podología, fisioterapia preventiva, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores San Luciano"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/122268-centro-municipal-mayores-san-vicente-paul.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "122268",
+		"title": "Centro Municipal de Mayores San Vicente de Paúl",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=630f8899fc81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/Opanel"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28019",
+			"street-address": "CALLE ANTONIA LANCHA 54"
+		},
+		"location": {
+			"latitude": 40.386234060213404,
+			"longitude": -3.723011419580998
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Opañel (línea 6)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, comedor y cafetería, prensa diaria y sala de lecturas, aula de informática y zona wifi &amp;ldquo;Madrid&amp;rdquo;. Se desarrollan talleres y actividades culturales y manuales, artísticas, de mantenimiento físico y preventivas ,de autocuidado, actividades formativas de educación digital básica e informática.",
+			"organization-name": "Centro Municipal de Mayores San Vicente de Paúl"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11764-centro-municipal-mayores-santa-engracia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11764",
+		"title": "Centro Municipal de Mayores Santa Engracia",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9a5366051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/RiosRosas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28003",
+			"street-address": "CALLE SANTA ENGRACIA 116"
+		},
+		"location": {
+			"latitude": 40.439994676265194,
+			"longitude": -3.7007205182445757
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Ríos Rosas (línea 1)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado 25 diciembre, 1 y 6 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Santa Engracia"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/107426-centro-municipal-mayores-santa-eugenia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "107426",
+		"title": "Centro Municipal de Mayores Santa Eugenia",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=174155004e91f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/VillaDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/VillaDeVallecas/Barrio/SantaEugenia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28031",
+			"street-address": "CALLE VIRGEN DE LAS VI&amp;Ntilde;AS 1"
+		},
+		"location": {
+			"latitude": 40.38119078998615,
+			"longitude": -3.60443763893831
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, orientación jurídica, estimulación cognitiva y bienestar psicológico, podología, peluquería, comedor y cafetería, biblioteca y sala de lectura, préstamo de prensa y juegos de mesa y voluntariado. Se desarrollan talleres culturales y manuales, artísticos, tecnológicos, de hábitos saludables y de ejercicio físico y baile. Se realizan viajes, visitas, excursiones y salidas culturales, de ocio y senderismo. Celebración de fiestas según calendario y baile semanal. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Santa Eugenia"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/31019-centro-municipal-mayores-teresa-calcuta.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "31019",
+		"title": "Centro Municipal de Mayores Teresa de Calcuta",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0c07b3e42751c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas/Barrio/AlamedaOsuna"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28042",
+			"street-address": "PLAZA NAVIO 4"
+		},
+		"location": {
+			"latitude": 40.455320740232835,
+			"longitude": -3.5876301858469386
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 20:45 horas. Sábados, de 10 a 14 y de 16 a 20:45 horas. Domingos y festivos, de 10:15 a 13:45 y de 16:15 a 19:45 horas. Julio y agosto:, de lunes  a viernes, de 9 a 20:45 horas. Sábados, domingos y festivos, de 10:15 a 13:45 horas. Los días 24 y 31 de diciembre, de 10 a 13 horas. Cerrado 25 diciembre y 1 enero.",
+			"services": "El centro ofrece de talleres manuales, culturales y de ejercicio físico, actividades culturales (jornadas, conferencias, visitas a museos, exposiciones, teatro), actividades de ocio (bailes, fiestas) y actividades intergeneracioneles (proyecto Alas para abordar situaciones de soledad no deseada9.",
+			"organization-name": "Centro Municipal de Mayores Teresa de Calcuta"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11701-centro-municipal-mayores-tierno-galvan.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11701",
+		"title": "Centro Municipal de Mayores Tierno Galván",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e08366051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/Abrantes"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28025",
+			"street-address": "CALLE CARRERO JUAN RAMON 24"
+		},
+		"location": {
+			"latitude": 40.38081223625042,
+			"longitude": -3.730604414039243
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo. de 9 a 21 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, comedor y cafetería, prensa diaria y sala de lecturas, aula de informática y zona wifi &amp;ldquo;Madrid&amp;rdquo;. Se desarrollan talleres y actividades culturales y manuales, artísticas, de mantenimiento físico y preventivas ,de autocuidado, actividades formativas de educación digital básica e informática.",
+			"organization-name": "Centro Municipal de Mayores Tierno Galván"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/29184-centro-municipal-mayores-villa-vallecas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "29184",
+		"title": "Centro Municipal de Mayores Villa de Vallecas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5237b3e42751c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/VillaDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/VillaDeVallecas/Barrio/CascoHVallecas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28031",
+			"street-address": "CALLE PICO MAMPODRE 6"
+		},
+		"location": {
+			"latitude": 40.3773278576296,
+			"longitude": -3.6212336061911388
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Villa de Vallecas (Línea 1)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas . Cerrado 25 diciembre y 1 enero.",
+			"services": "Se ofrecen servicios de animación sociocultural, orientación jurídica, estimulación cognitiva y bienestar psicológico, podología, peluquería, comedor y cafetería, biblioteca y sala de lectura, préstamo de prensa y juegos de mesa y voluntariado. Se desarrollan talleres culturales y manuales, artísticos, tecnológicos, de hábitos saludables y de ejercicio físico y baile. Se realizan viajes, visitas, excursiones y salidas culturales y de ocio. Celebración de fiestas según calendario y baile semanal. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Villa de Vallecas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11726-centro-municipal-mayores-villalonso.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11726",
+		"title": "Centro Municipal de Mayores Villalonso",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8dc366051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/VillaverdeAltoCH"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28021",
+			"street-address": "CALLE VILLALONSO 12"
+		},
+		"location": {
+			"latitude": 40.34958362533649,
+			"longitude": -3.709073393125563
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Renfe: Puente Alcocer",
+			"accesibility": "1",
+			"schedule": "Lunes a domingos y festivos, de 9 a 21 horas. Cerrado el 25 de diciembre y 1 de enero.",
+			"services": "Se ofrecen servicios de dinamización y servicio de prevención de la dependencia con actividades de terapia ocupacional y físico deportivas, biblioteca, cafetería y comedor, aula de informática y talleres de nuevas tecnologías, actividades lúdicas, intergeneracionales, artísticas, manuales y culturales, juegos de mesa, excursiones y viajes. Zona wifi.",
+			"organization-name": "Centro Municipal de Mayores Villalonso"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5425048-centro-municipal-mayores-vocal-vecino-justo-sierra.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "5425048",
+		"title": "Centro Municipal de Mayores Vocal Vecino Justo Sierra",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=de8a0aab9fbe3210VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/LaPaz"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28034",
+			"street-address": "CALLE FERMIN CABALLERO 17"
+		},
+		"location": {
+			"latitude": 40.48597882831101,
+			"longitude": -3.7015644205606355
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Consulta los siguientes enlaces",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes: de 9 a 21 horas  Fines de semana y festivos: de 9:30 a 20:30 horas",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, y se desarrollan talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Centro Municipal de Mayores Vocal Vecino Justo Sierra"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11763-centro-municipal-mayores-zofio.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "11763",
+		"title": "Centro Municipal de Mayores Zofio",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d3f366051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Zofio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28026",
+			"street-address": "CALLE RICARDO BELTRAN Y ROZPIDE 31"
+		},
+		"location": {
+			"latitude": 40.38009758797499,
+			"longitude": -3.71762017492952
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro: Plaza Elíptica (línea 6)",
+			"accesibility": "1",
+			"schedule": "Lunes a domingo, de 9 a 21 horas.",
+			"services": "Se ofrecen servicios de animación sociocultural, podología, peluquería, prensa, comedor y cafetería, biblioteca, wifi, fisioterapia preventiva y se desarrollan talleres y actividades culturales y manuales, artísticas, de nuevas tecnologías (correo, redes sociales e informática, telefonía móvil, informática, trámites digitales para la vida diaria, fotografía y edición de videos), deportivas y preventivas y de autocuidado. Club de Senderismo, Club de Lectura y Grupo de Mujeres.  Equipo de animación: cmmusera.blogspot.com   Facebook   Instagram   Youtube",
+			"organization-name": "Centro Municipal de Mayores Zofio"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12055379-espacio-mayores-tablas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosMayores",
+		"id": "12055379",
+		"title": "Espacio para mayores Las Tablas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2c22864474449810VgnVCM1000001d4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/Valverde"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28050",
+			"street-address": "AVENIDA CAMINO DE SANTIAGO 39"
+		},
+		"location": {
+			"latitude": 40.496178544904275,
+			"longitude": -3.6742173844664605
+		},
+		"organization": {
+			"organization-desc": " Requisitos para ser socio:  Ser titular de la tarjeta madridmayor.es. Para solicitar esta tarjeta vea la información relacionada. Los Centros Municipales de Mayores son equipamientos de Servicios Sociales No Residenciales, destinados a promover la convivencia de los mayores, propiciando la participación y la integración social. Metro:  Las Tablas Línea (línea 10)",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 9 a 21 horas. Sábado de 16 a 20 horas.",
+			"services": "Se ofrecen servicios de talleres y actividades socioculturales, artísticas y recreativas.",
+			"organization-name": "Espacio para mayores Las Tablas"
+		}
+	}	  
+  ]
+}

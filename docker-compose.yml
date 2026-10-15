@@ -1,0 +1,62 @@
+# Clúster de Elasticsearch de 3 nodos para la prueba de concepto.
+# Seguridad desactivada: solo para uso local.
+
+x-es-comun: &es-comun
+  image: docker.elastic.co/elasticsearch/elasticsearch:8.15.3
+  environment: &es-env
+    cluster.name: vivetumunicipio                       # los 3 nodos forman el mismo clúster
+    discovery.seed_hosts: es01,es02,es03                # cómo se encuentran entre sí
+    cluster.initial_master_nodes: es01,es02,es03        # candidatos a nodo maestro en el primer arranque
+    xpack.security.enabled: "false"                     # sin usuario ni HTTPS (solo en local)
+    ES_JAVA_OPTS: "-Xms512m -Xmx512m"                   # 512 MB de memoria por nodo
+  networks: [elastic]
+
+services:
+  es01:
+    <<: *es-comun
+    container_name: es01
+    environment:
+      <<: *es-env
+      node.name: es01
+    ports:
+      - "9200:9200"          # solo es01 se expone a tu equipo; los otros se hablan por la red interna
+    volumes:
+      - es01data:/usr/share/elasticsearch/data
+
+  es02:
+    <<: *es-comun
+    container_name: es02
+    environment:
+      <<: *es-env
+      node.name: es02
+    volumes:
+      - es02data:/usr/share/elasticsearch/data
+
+  es03:
+    <<: *es-comun
+    container_name: es03
+    environment:
+      <<: *es-env
+      node.name: es03
+    volumes:
+      - es03data:/usr/share/elasticsearch/data
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.15.3
+    container_name: logstash
+    environment:
+      XPACK_MONITORING_ENABLED: "false"
+      LS_JAVA_OPTS: "-Xms256m -Xmx256m"
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro   # nuestro pipeline
+      - ./datos/integrados:/datos/integrados:ro              # los ficheros a cargar
+    depends_on: [es01, es02, es03]
+    networks: [elastic]
+
+volumes:          # los datos de cada nodo sobreviven aunque pares los contenedores
+  es01data:
+  es02data:
+  es03data:
+
+networks:
+  elastic:

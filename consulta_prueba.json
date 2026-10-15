@@ -1,0 +1,13 @@
+{
+  "size": 5,
+  "_source": ["titulo", "lugar_nombre", "categoria", "nivel_mayores"],
+  "query": {
+    "geo_distance": {
+      "distance": "1km",
+      "ubicacion": { "lat": 40.4169, "lon": -3.7035 }
+    }
+  },
+  "sort": [
+    { "_geo_distance": { "ubicacion": { "lat": 40.4169, "lon": -3.7035 }, "order": "asc", "unit": "m" } }
+  ]
+}
