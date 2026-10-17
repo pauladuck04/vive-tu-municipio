@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-15T13:36:47",
+  "generado": "2026-10-16T15:51:21",
   "casa": {
     "nombre": "Ejemplo: calle de Alcalá, Ciudad Lineal",
     "lat": 40.438,
@@ -7,34 +7,14 @@
   },
   "radio_km": 2,
   "centro": {
-    "nombre": "Centro Municipal de Mayores Canal de Panamá",
-    "servicios": "Se ofrecen servicios de animación sociocultural, peluquería, prensa, gimnasio, zona WIFI, comedor y cafetería, voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
     "procedencia": [
       {
-        "extraido": "2026-10-14T21:37:44",
         "fuente": "200337-centros-mayores",
+        "extraido": "2026-10-14T21:37:44",
         "id_origen": "91398"
       }
     ],
     "codigo_postal": "28027",
-    "horario": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
-    "tipo": "centro_mayores",
-    "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4d6fdef5ab41c010VgnVCM2000000c205a0aRCRD",
-    "distrito": {
-      "nombre": "Ciudad Lineal",
-      "codigo": "15"
-    },
-    "id": "lug_91398",
-    "accesibilidad": {
-      "apoyos": [
-        "bucle_magnetico"
-      ],
-      "codigos": [
-        "1",
-        "6"
-      ],
-      "movilidad": "accesible"
-    },
     "ubicacion": {
       "coordinates": [
         -3.652412289521502,
@@ -42,220 +22,85 @@
       ],
       "type": "Point"
     },
+    "accesibilidad": {
+      "codigos": [
+        "1",
+        "6"
+      ],
+      "movilidad": "accesible",
+      "apoyos": [
+        "bucle_magnetico"
+      ]
+    },
+    "distrito": {
+      "nombre": "Ciudad Lineal",
+      "codigo": "15"
+    },
     "transporte": "Metro: Barrio Concepción (línea 7)",
+    "servicios": "Se ofrecen servicios de animación sociocultural, peluquería, prensa, gimnasio, zona WIFI, comedor y cafetería, voluntariado. Además, se desarrollan talleres y actividades culturales, manuales, artísticas, tecnológicas, deportivas y preventivas de autocuidado.",
+    "nombre": "Centro Municipal de Mayores Canal de Panamá",
     "direccion": "CALLE PADRE COLOMA 2",
+    "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4d6fdef5ab41c010VgnVCM2000000c205a0aRCRD",
+    "id": "lug_91398",
+    "horario": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+    "tipo": "centro_mayores",
     "distancia_m": 373
   },
   "dias": [
     {
-      "fecha": "2026-10-15",
-      "prevision": {
-        "fecha": "2026-10-15",
-        "cielo": "Despejado",
-        "tmax": 26,
-        "tmin": 17,
-        "procedencia": [
-          {
-            "elaborado": "2026-10-15T10:13:08",
-            "fuente": "aemet-prediccion-diaria-28079"
-          }
-        ],
-        "prob_lluvia": 0,
-        "prob_lluvia_manana": 0,
-        "prob_lluvia_tarde": 0,
-        "id": "prev_2026-10-15"
-      },
-      "actividades": [
-        {
-          "hora": "17:00",
-          "inicio": "2026-10-15T17:00:00",
-          "lluvia_franja": 0,
-          "lugar_id": "lug_11257851",
-          "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "1"
-            ],
-            "movilidad": "accesible"
-          },
-          "distrito": {
-            "nombre": "Ciudad Lineal",
-            "codigo": "15"
-          },
-          "id": "act_50442137",
-          "hora_conocida": true,
-          "ubicacion": {
-            "coordinates": [
-              -3.6534806246311913,
-              40.442311100791215
-            ],
-            "type": "Point"
-          },
-          "titulo": "Tramas que nos unen",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50442137"
-            }
-          ],
-          "categoria": "talleres_y_formacion",
-          "tipo_origen": "CursosTalleres",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
-          "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=61aa6cd168b01a10VgnVCM100000891ecb1aRCRD",
-          "distancia_m": 496,
-          "sesiones_semana": [
-            "2026-10-15T17:00:00"
-          ]
-        },
-        {
-          "hora": "18:00",
-          "inicio": "2026-10-15T18:00:00",
-          "lluvia_franja": 0,
-          "lugar_id": "lug_1762",
-          "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [
-              "bucle_magnetico"
-            ],
-            "codigos": [
-              "1",
-              "6"
-            ],
-            "movilidad": "accesible"
-          },
-          "distrito": {
-            "nombre": "Salamanca",
-            "codigo": "04"
-          },
-          "id": "act_50429753",
-          "hora_conocida": true,
-          "ubicacion": {
-            "coordinates": [
-              -3.670929243543714,
-              40.43199309720514
-            ],
-            "type": "Point"
-          },
-          "titulo": "Cineclub Buenavista",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50429753"
-            }
-          ],
-          "categoria": "espectaculos",
-          "tipo_origen": "CineActividadesAudiovisuales",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Biblioteca Pública Municipal David Gistau (Salamanca)",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/1762-biblioteca-publica-municipal-david-gistau-salamanca-.json",
-          "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=9c59cabd119c0a10VgnVCM100000891ecb1aRCRD",
-          "distancia_m": 1505,
-          "sesiones_semana": [
-            "2026-10-15T18:00:00"
-          ]
-        }
-      ],
-      "descartadas_lluvia": 0
-    },
-    {
       "fecha": "2026-10-16",
       "prevision": {
-        "fecha": "2026-10-16",
-        "cielo": "Despejado",
         "tmax": 27,
-        "tmin": 17,
+        "prob_lluvia_tarde": 0,
         "procedencia": [
           {
             "elaborado": "2026-10-15T10:13:08",
             "fuente": "aemet-prediccion-diaria-28079"
           }
         ],
+        "fecha": "2026-10-16",
         "prob_lluvia": 0,
-        "prob_lluvia_manana": 0,
-        "prob_lluvia_tarde": 0,
-        "id": "prev_2026-10-16"
+        "cielo": "Despejado",
+        "tmin": 17,
+        "id": "prev_2026-10-16",
+        "prob_lluvia_manana": 0
       },
       "actividades": [
-        {
-          "hora": "10:00",
-          "inicio": "2026-10-16T10:00:00",
-          "lluvia_franja": 0,
-          "lugar_id": "lug_11257851",
-          "gratuita": true,
-          "interior": false,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "1"
-            ],
-            "movilidad": "accesible"
-          },
-          "distrito": {
-            "nombre": "Ciudad Lineal",
-            "codigo": "15"
-          },
-          "id": "act_50434593",
-          "hora_conocida": true,
-          "ubicacion": {
-            "coordinates": [
-              -3.6534806246311913,
-              40.442311100791215
-            ],
-            "type": "Point"
-          },
-          "titulo": "Paseo y relajación por el Parque Juan Carlos I",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50434593"
-            }
-          ],
-          "categoria": "exposiciones_y_visitas",
-          "tipo_origen": "ExcursionesItinerariosVisitas",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
-          "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=857f887d1bbe0a10VgnVCM200000f921e388RCRD",
-          "distancia_m": 496,
-          "sesiones_semana": [
-            "2026-10-16T10:00:00"
-          ]
-        },
         {
           "hora": "18:00",
           "inicio": "2026-10-16T18:00:00",
           "lluvia_franja": 0,
-          "lugar_id": "lug_186714",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50402500"
+            }
+          ],
+          "lugar_nombre": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
+          "titulo": "'¿Por qué me siento culpable?'. Hablemos de la culpa",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [
-              "bucle_magnetico"
-            ],
-            "codigos": [
-              "1",
-              "6"
-            ],
-            "movilidad": "accesible"
-          },
           "distrito": {
             "nombre": "Ciudad Lineal",
             "codigo": "15"
           },
-          "id": "act_50402500",
           "hora_conocida": true,
+          "tipo_origen": "ConferenciasColoquios",
+          "id": "act_50402500",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/186714-biblioteca-publica-municipal-pablo-neruda-ciudad-lineal-.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1",
+              "6"
+            ],
+            "movilidad": "accesible",
+            "apoyos": [
+              "bucle_magnetico"
+            ]
+          },
+          "categoria": "charlas_y_lectura",
+          "interior": true,
+          "lugar_id": "lug_186714",
           "ubicacion": {
             "coordinates": [
               -3.6416899839787695,
@@ -263,23 +108,64 @@
             ],
             "type": "Point"
           },
-          "titulo": "'¿Por qué me siento culpable?'. Hablemos de la culpa",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50402500"
-            }
-          ],
-          "categoria": "charlas_y_lectura",
-          "tipo_origen": "ConferenciasColoquios",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/186714-biblioteca-publica-municipal-pablo-neruda-ciudad-lineal-.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=67a0fdf203660a10VgnVCM200000f921e388RCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
           "distancia_m": 1477,
           "sesiones_semana": [
             "2026-10-16T18:00:00"
+          ]
+        },
+        {
+          "hora": "19:00",
+          "inicio": "2026-10-16T19:00:00",
+          "lluvia_franja": 0,
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50433607"
+            }
+          ],
+          "lugar_nombre": "Centro Cultural Buenavista (Salamanca)",
+          "titulo": "Mom España pintoresca: Música y tradición",
+          "gratuita": true,
+          "distrito": {
+            "nombre": "Salamanca",
+            "codigo": "04"
+          },
+          "hora_conocida": true,
+          "tipo_origen": "Musica",
+          "id": "act_50433607",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/64851-centro-cultural-buenavista-salamanca-.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1",
+              "5",
+              "6"
+            ],
+            "movilidad": "accesible",
+            "apoyos": [
+              "senalizacion_podotactil",
+              "bucle_magnetico"
+            ]
+          },
+          "categoria": "espectaculos",
+          "interior": true,
+          "lugar_id": "lug_64851",
+          "ubicacion": {
+            "coordinates": [
+              -3.670904677285496,
+              40.43200001609297
+            ],
+            "type": "Point"
+          },
+          "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=36e45c51a57e0a10VgnVCM200000f921e388RCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
+          "distancia_m": 1502,
+          "sesiones_semana": [
+            "2026-10-16T19:00:00"
           ]
         }
       ],
@@ -288,43 +174,54 @@
     {
       "fecha": "2026-10-17",
       "prevision": {
-        "fecha": "2026-10-17",
-        "cielo": "Intervalos nubosos con lluvia",
         "tmax": 24,
-        "tmin": 13,
+        "prob_lluvia_tarde": 80,
         "procedencia": [
           {
             "elaborado": "2026-10-15T10:13:08",
             "fuente": "aemet-prediccion-diaria-28079"
           }
         ],
+        "fecha": "2026-10-17",
         "prob_lluvia": 95,
-        "prob_lluvia_manana": 40,
-        "prob_lluvia_tarde": 80,
-        "id": "prev_2026-10-17"
+        "cielo": "Intervalos nubosos con lluvia",
+        "tmin": 13,
+        "id": "prev_2026-10-17",
+        "prob_lluvia_manana": 40
       },
       "actividades": [
         {
           "hora": "11:30",
           "inicio": "2026-10-17T11:30:00",
           "lluvia_franja": 40,
-          "lugar_id": "lug_5994901",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50438175"
+            }
+          ],
+          "lugar_nombre": "Parque El Calero",
+          "titulo": "Actuación Brasileñas",
           "gratuita": true,
-          "interior": false,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "2"
-            ],
-            "movilidad": "parcial"
-          },
           "distrito": {
             "nombre": "Ciudad Lineal",
             "codigo": "15"
           },
-          "id": "act_50438175",
           "hora_conocida": true,
+          "tipo_origen": "DanzaBaile",
+          "id": "act_50438175",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5994901-parque-calero.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "2"
+            ],
+            "movilidad": "parcial",
+            "apoyos": []
+          },
+          "categoria": "espectaculos",
+          "interior": false,
+          "lugar_id": "lug_5994901",
           "ubicacion": {
             "coordinates": [
               -3.6519351470803567,
@@ -332,20 +229,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "Actuación Brasileñas",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50438175"
-            }
-          ],
-          "categoria": "espectaculos",
-          "tipo_origen": "DanzaBaile",
-          "nivel_mayores": "dirigida",
-          "lugar_nombre": "Parque El Calero",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5994901-parque-calero.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=3c84a002842f0a10VgnVCM200000f921e388RCRD",
+          "precio": "",
+          "nivel_mayores": "dirigida",
           "distancia_m": 376,
           "sesiones_semana": [
             "2026-10-17T11:30:00"
@@ -355,28 +241,39 @@
           "hora": "19:00",
           "inicio": "2026-10-17T19:00:00",
           "lluvia_franja": 80,
-          "lugar_id": "lug_64851",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50433608"
+            }
+          ],
+          "lugar_nombre": "Centro Cultural Buenavista (Salamanca)",
+          "titulo": "Cinco horas con Mario",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
+          "distrito": {
+            "nombre": "Salamanca",
+            "codigo": "04"
+          },
+          "hora_conocida": true,
+          "tipo_origen": "TeatroPerformance",
+          "id": "act_50433608",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/64851-centro-cultural-buenavista-salamanca-.json",
           "accesibilidad_lugar": {
-            "apoyos": [
-              "senalizacion_podotactil",
-              "bucle_magnetico"
-            ],
             "codigos": [
               "1",
               "5",
               "6"
             ],
-            "movilidad": "accesible"
+            "movilidad": "accesible",
+            "apoyos": [
+              "senalizacion_podotactil",
+              "bucle_magnetico"
+            ]
           },
-          "distrito": {
-            "nombre": "Salamanca",
-            "codigo": "04"
-          },
-          "id": "act_50433608",
-          "hora_conocida": true,
+          "categoria": "espectaculos",
+          "interior": true,
+          "lugar_id": "lug_64851",
           "ubicacion": {
             "coordinates": [
               -3.670904677285496,
@@ -384,20 +281,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "Cinco horas con Mario",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50433608"
-            }
-          ],
-          "categoria": "espectaculos",
-          "tipo_origen": "TeatroPerformance",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Centro Cultural Buenavista (Salamanca)",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/64851-centro-cultural-buenavista-salamanca-.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=ea765c51a57e0a10VgnVCM200000f921e388RCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
           "distancia_m": 1502,
           "sesiones_semana": [
             "2026-10-17T19:00:00"
@@ -409,43 +295,54 @@
     {
       "fecha": "2026-10-18",
       "prevision": {
-        "fecha": "2026-10-18",
-        "cielo": "Intervalos nubosos",
         "tmax": 19,
-        "tmin": 9,
+        "prob_lluvia_tarde": 10,
         "procedencia": [
           {
             "elaborado": "2026-10-15T10:13:08",
             "fuente": "aemet-prediccion-diaria-28079"
           }
         ],
+        "fecha": "2026-10-18",
         "prob_lluvia": 40,
-        "prob_lluvia_manana": 35,
-        "prob_lluvia_tarde": 10,
-        "id": "prev_2026-10-18"
+        "cielo": "Intervalos nubosos",
+        "tmin": 9,
+        "id": "prev_2026-10-18",
+        "prob_lluvia_manana": 35
       },
       "actividades": [
         {
           "hora": "18:00",
           "inicio": "2026-10-18T18:00:00",
           "lluvia_franja": 10,
-          "lugar_id": "lug_1909",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50434414"
+            }
+          ],
+          "lugar_nombre": "Centro Sociocultural Maestro Alonso (Salamanca)",
+          "titulo": "Sesión de jazz",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "1"
-            ],
-            "movilidad": "accesible"
-          },
           "distrito": {
             "nombre": "Salamanca",
             "codigo": "04"
           },
-          "id": "act_50434414",
           "hora_conocida": true,
+          "tipo_origen": "JazzSoulFunkySwingReagge",
+          "id": "act_50434414",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/1909-centro-sociocultural-maestro-alonso-salamanca-.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1"
+            ],
+            "movilidad": "accesible",
+            "apoyos": []
+          },
+          "categoria": "espectaculos",
+          "interior": true,
+          "lugar_id": "lug_1909",
           "ubicacion": {
             "coordinates": [
               -3.664846244443566,
@@ -453,20 +350,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "Sesión de jazz",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50434414"
-            }
-          ],
-          "categoria": "espectaculos",
-          "tipo_origen": "JazzSoulFunkySwingReagge",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Centro Sociocultural Maestro Alonso (Salamanca)",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/1909-centro-sociocultural-maestro-alonso-salamanca-.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=a0a453d9c38e0a10VgnVCM100000891ecb1aRCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
           "distancia_m": 1269,
           "sesiones_semana": [
             "2026-10-18T18:00:00"
@@ -478,43 +364,54 @@
     {
       "fecha": "2026-10-19",
       "prevision": {
-        "fecha": "2026-10-19",
-        "cielo": "Nuboso",
         "tmax": 18,
-        "tmin": 8,
+        "prob_lluvia_tarde": null,
         "procedencia": [
           {
             "elaborado": "2026-10-15T10:13:08",
             "fuente": "aemet-prediccion-diaria-28079"
           }
         ],
+        "fecha": "2026-10-19",
         "prob_lluvia": 40,
-        "prob_lluvia_manana": null,
-        "prob_lluvia_tarde": null,
-        "id": "prev_2026-10-19"
+        "cielo": "Nuboso",
+        "tmin": 8,
+        "id": "prev_2026-10-19",
+        "prob_lluvia_manana": null
       },
       "actividades": [
         {
           "hora": "10:00",
           "inicio": "2026-10-19T10:00:00",
           "lluvia_franja": 40,
-          "lugar_id": "lug_11257851",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "12474715"
+            }
+          ],
+          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+          "titulo": "Autocuidado desde el movimiento. Espacio de Igualdad Emilia Pardo Bazán",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "1"
-            ],
-            "movilidad": "accesible"
-          },
           "distrito": {
             "nombre": "Ciudad Lineal",
             "codigo": "15"
           },
-          "id": "act_12474715",
           "hora_conocida": true,
+          "tipo_origen": "CursosTalleres",
+          "id": "act_12474715",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1"
+            ],
+            "movilidad": "accesible",
+            "apoyos": []
+          },
+          "categoria": "talleres_y_formacion",
+          "interior": true,
+          "lugar_id": "lug_11257851",
           "ubicacion": {
             "coordinates": [
               -3.6534806246311913,
@@ -522,20 +419,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "Autocuidado desde el movimiento. Espacio de Igualdad Emilia Pardo Bazán",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "12474715"
-            }
-          ],
-          "categoria": "talleres_y_formacion",
-          "tipo_origen": "CursosTalleres",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=0f43bbe3111c1910VgnVCM1000001d4a900aRCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
           "distancia_m": 496,
           "sesiones_semana": [
             "2026-10-19T10:00:00"
@@ -547,43 +433,54 @@
     {
       "fecha": "2026-10-20",
       "prevision": {
-        "fecha": "2026-10-20",
-        "cielo": "Muy nuboso con lluvia escasa",
         "tmax": 18,
-        "tmin": 12,
+        "prob_lluvia_tarde": null,
         "procedencia": [
           {
             "elaborado": "2026-10-15T10:13:08",
             "fuente": "aemet-prediccion-diaria-28079"
           }
         ],
+        "fecha": "2026-10-20",
         "prob_lluvia": 65,
-        "prob_lluvia_manana": null,
-        "prob_lluvia_tarde": null,
-        "id": "prev_2026-10-20"
+        "cielo": "Muy nuboso con lluvia escasa",
+        "tmin": 12,
+        "id": "prev_2026-10-20",
+        "prob_lluvia_manana": null
       },
       "actividades": [
         {
           "hora": "10:30",
           "inicio": "2026-10-20T10:30:00",
           "lluvia_franja": 65,
-          "lugar_id": "lug_11257851",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50004537"
+            }
+          ],
+          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+          "titulo": "Musicoterapia para mayores",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "1"
-            ],
-            "movilidad": "accesible"
-          },
           "distrito": {
             "nombre": "Ciudad Lineal",
             "codigo": "15"
           },
-          "id": "act_50004537",
           "hora_conocida": true,
+          "tipo_origen": "CursosTalleres",
+          "id": "act_50004537",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1"
+            ],
+            "movilidad": "accesible",
+            "apoyos": []
+          },
+          "categoria": "talleres_y_formacion",
+          "interior": true,
+          "lugar_id": "lug_11257851",
           "ubicacion": {
             "coordinates": [
               -3.6534806246311913,
@@ -591,20 +488,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "Musicoterapia para mayores",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50004537"
-            }
-          ],
-          "categoria": "talleres_y_formacion",
-          "tipo_origen": "CursosTalleres",
-          "nivel_mayores": "dirigida",
-          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=9ed3910e319f7910VgnVCM200000f921e388RCRD",
+          "precio": "",
+          "nivel_mayores": "dirigida",
           "distancia_m": 496,
           "sesiones_semana": [
             "2026-10-20T10:30:00"
@@ -614,23 +500,34 @@
           "hora": "18:00",
           "inicio": "2026-10-20T18:00:00",
           "lluvia_franja": 65,
-          "lugar_id": "lug_1909",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50434415"
+            }
+          ],
+          "lugar_nombre": "Centro Sociocultural Maestro Alonso (Salamanca)",
+          "titulo": "La Infanta Margarita Teresa",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "1"
-            ],
-            "movilidad": "accesible"
-          },
           "distrito": {
             "nombre": "Salamanca",
             "codigo": "04"
           },
-          "id": "act_50434415",
           "hora_conocida": true,
+          "tipo_origen": "ConferenciasColoquios",
+          "id": "act_50434415",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/1909-centro-sociocultural-maestro-alonso-salamanca-.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1"
+            ],
+            "movilidad": "accesible",
+            "apoyos": []
+          },
+          "categoria": "charlas_y_lectura",
+          "interior": true,
+          "lugar_id": "lug_1909",
           "ubicacion": {
             "coordinates": [
               -3.664846244443566,
@@ -638,20 +535,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "La Infanta Margarita Teresa",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50434415"
-            }
-          ],
-          "categoria": "charlas_y_lectura",
-          "tipo_origen": "ConferenciasColoquios",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Centro Sociocultural Maestro Alonso (Salamanca)",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/1909-centro-sociocultural-maestro-alonso-salamanca-.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=52f553d9c38e0a10VgnVCM100000891ecb1aRCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
           "distancia_m": 1269,
           "sesiones_semana": [
             "2026-10-20T18:00:00"
@@ -663,43 +549,54 @@
     {
       "fecha": "2026-10-21",
       "prevision": {
-        "fecha": "2026-10-21",
-        "cielo": "Intervalos nubosos",
         "tmax": 19,
-        "tmin": 12,
+        "prob_lluvia_tarde": null,
         "procedencia": [
           {
             "elaborado": "2026-10-15T10:13:08",
             "fuente": "aemet-prediccion-diaria-28079"
           }
         ],
+        "fecha": "2026-10-21",
         "prob_lluvia": 40,
-        "prob_lluvia_manana": null,
-        "prob_lluvia_tarde": null,
-        "id": "prev_2026-10-21"
+        "cielo": "Intervalos nubosos",
+        "tmin": 12,
+        "id": "prev_2026-10-21",
+        "prob_lluvia_manana": null
       },
       "actividades": [
         {
           "hora": "12:00",
           "inicio": "2026-10-21T12:00:00",
           "lluvia_franja": 40,
-          "lugar_id": "lug_11257851",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50370022"
+            }
+          ],
+          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+          "titulo": "Libera tu voz. Círculo de canto",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
-          "accesibilidad_lugar": {
-            "apoyos": [],
-            "codigos": [
-              "1"
-            ],
-            "movilidad": "accesible"
-          },
           "distrito": {
             "nombre": "Ciudad Lineal",
             "codigo": "15"
           },
-          "id": "act_50370022",
           "hora_conocida": true,
+          "tipo_origen": "",
+          "id": "act_50370022",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1"
+            ],
+            "movilidad": "accesible",
+            "apoyos": []
+          },
+          "categoria": "otros",
+          "interior": true,
+          "lugar_id": "lug_11257851",
           "ubicacion": {
             "coordinates": [
               -3.6534806246311913,
@@ -707,20 +604,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "Libera tu voz. Círculo de canto",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50370022"
-            }
-          ],
-          "categoria": "otros",
-          "tipo_origen": "",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=81beb9af733af910VgnVCM100000891ecb1aRCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
           "distancia_m": 496,
           "sesiones_semana": [
             "2026-10-21T12:00:00"
@@ -730,28 +616,39 @@
           "hora": "19:00",
           "inicio": "2026-10-21T19:00:00",
           "lluvia_franja": 40,
-          "lugar_id": "lug_64851",
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50433616"
+            }
+          ],
+          "lugar_nombre": "Centro Cultural Buenavista (Salamanca)",
+          "titulo": "Escenas de microteatro dramatizadas y teatralizadas",
           "gratuita": true,
-          "interior": true,
-          "precio": "",
+          "distrito": {
+            "nombre": "Salamanca",
+            "codigo": "04"
+          },
+          "hora_conocida": true,
+          "tipo_origen": "TeatroPerformance",
+          "id": "act_50433616",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/64851-centro-cultural-buenavista-salamanca-.json",
           "accesibilidad_lugar": {
-            "apoyos": [
-              "senalizacion_podotactil",
-              "bucle_magnetico"
-            ],
             "codigos": [
               "1",
               "5",
               "6"
             ],
-            "movilidad": "accesible"
+            "movilidad": "accesible",
+            "apoyos": [
+              "senalizacion_podotactil",
+              "bucle_magnetico"
+            ]
           },
-          "distrito": {
-            "nombre": "Salamanca",
-            "codigo": "04"
-          },
-          "id": "act_50433616",
-          "hora_conocida": true,
+          "categoria": "espectaculos",
+          "interior": true,
+          "lugar_id": "lug_64851",
           "ubicacion": {
             "coordinates": [
               -3.670904677285496,
@@ -759,20 +656,9 @@
             ],
             "type": "Point"
           },
-          "titulo": "Escenas de microteatro dramatizadas y teatralizadas",
-          "procedencia": [
-            {
-              "extraido": "2026-10-14T21:37:43",
-              "fuente": "300107-agenda-actividades",
-              "id_origen": "50433616"
-            }
-          ],
-          "categoria": "espectaculos",
-          "tipo_origen": "TeatroPerformance",
-          "nivel_mayores": "apta",
-          "lugar_nombre": "Centro Cultural Buenavista (Salamanca)",
-          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/64851-centro-cultural-buenavista-salamanca-.json",
           "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=867aa111d67e0a10VgnVCM200000f921e388RCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
           "distancia_m": 1502,
           "sesiones_semana": [
             "2026-10-21T19:00:00"
@@ -780,19 +666,110 @@
         }
       ],
       "descartadas_lluvia": 0
+    },
+    {
+      "fecha": "2026-10-22",
+      "prevision": null,
+      "actividades": [
+        {
+          "hora": "10:30",
+          "inicio": "2026-10-22T10:30:00",
+          "lluvia_franja": null,
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50442119"
+            }
+          ],
+          "lugar_nombre": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+          "titulo": "Exprésate a través el arte y la escritura creativa",
+          "gratuita": true,
+          "distrito": {
+            "nombre": "Ciudad Lineal",
+            "codigo": "15"
+          },
+          "hora_conocida": true,
+          "tipo_origen": "CursosTalleres",
+          "id": "act_50442119",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11257851-espacio-igualdad-emilia-pardo-bazan-ciudad-lineal.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1"
+            ],
+            "movilidad": "accesible",
+            "apoyos": []
+          },
+          "categoria": "talleres_y_formacion",
+          "interior": true,
+          "lugar_id": "lug_11257851",
+          "ubicacion": {
+            "coordinates": [
+              -3.6534806246311913,
+              40.442311100791215
+            ],
+            "type": "Point"
+          },
+          "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=8e654a11e6b01a10VgnVCM100000891ecb1aRCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
+          "distancia_m": 496,
+          "sesiones_semana": [
+            "2026-10-22T10:30:00"
+          ]
+        },
+        {
+          "hora": "18:00",
+          "inicio": "2026-10-22T18:00:00",
+          "lluvia_franja": null,
+          "procedencia": [
+            {
+              "fuente": "300107-agenda-actividades",
+              "extraido": "2026-10-14T21:37:43",
+              "id_origen": "50434501"
+            }
+          ],
+          "lugar_nombre": "Centro Sociocultural Maestro Alonso (Salamanca)",
+          "titulo": "El hospital de la caridad de Sevilla",
+          "gratuita": true,
+          "distrito": {
+            "nombre": "Salamanca",
+            "codigo": "04"
+          },
+          "hora_conocida": true,
+          "tipo_origen": "ConferenciasColoquios",
+          "id": "act_50434501",
+          "lugar_ref": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/1909-centro-sociocultural-maestro-alonso-salamanca-.json",
+          "accesibilidad_lugar": {
+            "codigos": [
+              "1"
+            ],
+            "movilidad": "accesible",
+            "apoyos": []
+          },
+          "categoria": "charlas_y_lectura",
+          "interior": true,
+          "lugar_id": "lug_1909",
+          "ubicacion": {
+            "coordinates": [
+              -3.664846244443566,
+              40.4293927571053
+            ],
+            "type": "Point"
+          },
+          "url_info": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f6e80251d58e0a10VgnVCM100000891ecb1aRCRD",
+          "precio": "",
+          "nivel_mayores": "apta",
+          "distancia_m": 1269,
+          "sesiones_semana": [
+            "2026-10-22T18:00:00"
+          ]
+        }
+      ],
+      "descartadas_lluvia": 0
     }
   ],
   "candidatas": [
-    {
-      "titulo": "Danzas del mundo Fussion",
-      "ubicacion": {
-        "coordinates": [
-          -3.6519351470803567,
-          40.43555222953495
-        ],
-        "type": "Point"
-      }
-    },
     {
       "titulo": "Actuación Brasileñas",
       "ubicacion": {
@@ -805,6 +782,26 @@
     },
     {
       "titulo": "De raíces y ramas",
+      "ubicacion": {
+        "coordinates": [
+          -3.6519351470803567,
+          40.43555222953495
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "titulo": "Danzas del mundo Fussion",
+      "ubicacion": {
+        "coordinates": [
+          -3.6519351470803567,
+          40.43555222953495
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "titulo": "Arrabal tango",
       "ubicacion": {
         "coordinates": [
           -3.6519351470803567,
@@ -834,17 +831,7 @@
       }
     },
     {
-      "titulo": "Arrabal tango",
-      "ubicacion": {
-        "coordinates": [
-          -3.6519351470803567,
-          40.43555222953495
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "titulo": "Aires de América",
+      "titulo": "Salpicón de ilusiones",
       "ubicacion": {
         "coordinates": [
           -3.6519351470803567,
@@ -864,6 +851,16 @@
       }
     },
     {
+      "titulo": "Aires de América",
+      "ubicacion": {
+        "coordinates": [
+          -3.6519351470803567,
+          40.43555222953495
+        ],
+        "type": "Point"
+      }
+    },
+    {
       "titulo": "A-Copla-Te",
       "ubicacion": {
         "coordinates": [
@@ -874,37 +871,17 @@
       }
     },
     {
-      "titulo": "Salpicón de ilusiones",
+      "titulo": "Consejo de sabias. Espacio de Igualdad Emilia Pardo Bazán",
       "ubicacion": {
         "coordinates": [
-          -3.6519351470803567,
-          40.43555222953495
+          -3.6534806246311913,
+          40.442311100791215
         ],
         "type": "Point"
       }
     },
     {
       "titulo": "Musicoterapia para mayores",
-      "ubicacion": {
-        "coordinates": [
-          -3.6534806246311913,
-          40.442311100791215
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "titulo": "Tramas que nos unen",
-      "ubicacion": {
-        "coordinates": [
-          -3.6534806246311913,
-          40.442311100791215
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "titulo": "Consejo de sabias. Espacio de Igualdad Emilia Pardo Bazán",
       "ubicacion": {
         "coordinates": [
           -3.6534806246311913,
@@ -944,16 +921,6 @@
       }
     },
     {
-      "titulo": "Paseo y relajación por el Parque Juan Carlos I",
-      "ubicacion": {
-        "coordinates": [
-          -3.6534806246311913,
-          40.442311100791215
-        ],
-        "type": "Point"
-      }
-    },
-    {
       "titulo": "La Infanta Margarita Teresa",
       "ubicacion": {
         "coordinates": [
@@ -974,11 +941,31 @@
       }
     },
     {
+      "titulo": "El hospital de la caridad de Sevilla",
+      "ubicacion": {
+        "coordinates": [
+          -3.664846244443566,
+          40.4293927571053
+        ],
+        "type": "Point"
+      }
+    },
+    {
       "titulo": "'¿Por qué me siento culpable?'. Hablemos de la culpa",
       "ubicacion": {
         "coordinates": [
           -3.6416899839787695,
           40.42941133441142
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "titulo": "Sala de embarque",
+      "ubicacion": {
+        "coordinates": [
+          -3.670904677285496,
+          40.43200001609297
         ],
         "type": "Point"
       }
@@ -1015,6 +1002,16 @@
     },
     {
       "titulo": "Cineclub Buenavista",
+      "ubicacion": {
+        "coordinates": [
+          -3.670929243543714,
+          40.43199309720514
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "titulo": "'Sala de embarque: las cuitas del secretario binario' de Arturo Amez",
       "ubicacion": {
         "coordinates": [
           -3.670929243543714,

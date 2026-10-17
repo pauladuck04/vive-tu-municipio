@@ -166,7 +166,11 @@ function dibujarMapa(plan, distritos) {
   // D3 espera los polígonos en sentido horario; el GeoJSON estándar (RFC 7946) los da en antihorario.
   // Si un polígono "ocupa más de medio planeta", está al revés: se le da la vuelta.
   distritos.features.forEach(f => {
-    if (d3.geoArea(f) > 2 * Math.PI) f.geometry.coordinates = f.geometry.coordinates.map(r => r.slice().reverse());
+    const g = f.geometry;
+    const piezas = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
+    piezas.forEach(p => {
+      if (d3.geoArea({ type: "Polygon", coordinates: p }) > 2 * Math.PI) p.forEach(anillo => anillo.reverse());
+    });
   });
 
   // Proyección "web Mercator", la misma que usan las teselas. El zoom solo cambia su escala y su traslación.

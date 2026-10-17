@@ -39,6 +39,9 @@ MAPPINGS = {
         "id": {"type": "keyword"}, "codigo": {"type": "keyword"}, "nombre": {"type": "keyword"},
         "poblacion_total": {"type": "integer"}, "poblacion_65_mas": {"type": "integer"},
         "poblacion_80_mas": {"type": "integer"}, "procedencia": PROCEDENCIA,
+        "actividades_mayores": {"type": "integer"}, "centros_mayores": {"type": "integer"},
+        "pct_65_mas": {"type": "float"}, "actividades_por_1000_mayores": {"type": "float"},
+        "centros_por_10000_mayores": {"type": "float"},
     },
     "prevision": {
         "id": {"type": "keyword"}, "fecha": {"type": "date"},
