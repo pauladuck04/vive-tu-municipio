@@ -1,0 +1,189 @@
+% =====================================================================
+%  Plantilla LaTeX para trabajos de Ingeniería - Universidad Carlos III de Madrid
+%  Compilar con: pdflatex -> biber -> pdflatex -> pdflatex  (o Overleaf)
+% =====================================================================
+\documentclass[12pt,a4paper,twoside,openright]{report}
+
+% --------------------- Codificación e idioma ---------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --------------------- Márgenes y espaciado ----------------------
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parskip}{0.5em}
+
+% --------------------- Colores corporativos ----------------------
+\usepackage{xcolor}
+\definecolor{azulUC3M}{RGB}{0,0,102}
+
+% --------------------- Matemáticas -------------------------------
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,}}
+
+% --------------------- Figuras y tablas --------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\captionsetup{font=small,labelfont={bf,color=azulUC3M}}
+
+% --------------------- Código fuente -----------------------------
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{azulUC3M}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{teal},
+  numbers=left, numberstyle=\tiny\color{gray},
+  frame=single, rulecolor=\color{gray!50},
+  breaklines=true, showstringspaces=false, tabsize=4,
+  literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ñ}{{\~n}}1
+}
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Índice de códigos}
+
+% --------------------- Cabeceras y pies --------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\leftmark}
+\fancyhead[RO]{\small\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+% --------------------- Títulos de capítulo -----------------------
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{azulUC3M}}
+  {\chaptertitlename\ \thechapter}{15pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+
+% --------------------- Bibliografía (estilo IEEE) ----------------
+\usepackage{csquotes}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{referencias.bib}
+
+% --------------------- Otros -------------------------------------
+\usepackage{enumitem}
+\usepackage[acronym,toc,nomain]{glossaries}
+\makeglossaries
+\usepackage[hidelinks]{hyperref}   % siempre de los últimos
+
+% --------------------- Acrónimos ---------------------------------
+\newacronym{uc3m}{UC3M}{Universidad Carlos III de Madrid}
+\newacronym{api}{API}{Application Programming Interface}
+
+% =====================================================================
+%  DATOS DEL TRABAJO  (edita aquí)
+% =====================================================================
+\newcommand{\titulo}{Vive tu municipio}
+% Un autor por línea, separados por \\
+\newcommand{\autores}{%
+  Paula Pato Gómez \\
+  Diego Gómez Terradillos \\
+  Daniel Muñoz Martínez \\
+  Anna de Vismes \\
+  Jorge Rodríguez Moreno}
+\newcommand{\asignatura}{Datos Masivos y Encadenados}
+\newcommand{\titulacion}{Máster en Ingeniería Informática}
+\newcommand{\escuela}{Escuela Politécnica Superior}
+\newcommand{\lugarfecha}{Leganés, \today}
+\newcommand{\curso}{Curso 2026--2027}
+
+\begin{document}
+
+% =====================================================================
+%  PORTADA
+% =====================================================================
+\begin{titlepage}
+  \centering
+  % Logo oficial UC3M (logo_uc3m.pdf, convertido desde Logo_UC3M.svg)
+  \IfFileExists{logo_uc3m.pdf}{\includegraphics[width=4cm]{logo_uc3m.pdf}}{%
+    \IfFileExists{logo_uc3m.png}{\includegraphics[width=4cm]{logo_uc3m.png}}{%
+      {\Large\bfseries\color{azulUC3M} Universidad Carlos III de Madrid}}}\par
+  \vspace{1cm}
+  {\large \escuela}\par
+  {\large \titulacion}\par
+  \vspace{2.5cm}
+  {\color{azulUC3M}\rule{\textwidth}{1.5pt}}\par\vspace{0.5cm}
+  {\Huge\bfseries\color{azulUC3M} \titulo}\par\vspace{0.5cm}
+  {\color{azulUC3M}\rule{\textwidth}{1.5pt}}\par
+  \vspace{2cm}
+  {\large \asignatura}\par
+  \vfill
+  \begin{tabular}{rl}
+    \textbf{Autores:} & \begin{tabular}[t]{@{}l@{}}\autores\end{tabular} \\[0.2cm]
+    \textbf{Curso:}   & \curso
+  \end{tabular}\par
+  \vspace{1.5cm}
+  {\large \lugarfecha}\par
+\end{titlepage}
+
+% Página de licencia (habitual en la UC3M)
+\thispagestyle{empty}
+\vspace*{\fill}
+\noindent Esta obra se encuentra sujeta a la licencia Creative Commons
+\textbf{Reconocimiento -- No Comercial -- Sin Obra Derivada}.
+\cleardoublepage
+
+% =====================================================================
+%  CUERPO
+% =====================================================================
+\chapter{Introducción}
+\label{cap:introduccion}
+
+\section{Motivación}
+Contexto y problema que se aborda. Ejemplo de acrónimo: \gls{uc3m}.
+Ejemplo de cita bibliográfica \cite{knuth1984}.
+
+\section{Objetivos}
+\begin{enumerate}[label=\textbf{O\arabic*.}]
+  \item Objetivo general.
+  \item Objetivo específico.
+\end{enumerate}
+
+\section{Estructura del documento}
+En el Capítulo~\ref{cap:estado} se revisa el estado del arte; en el
+Capítulo~\ref{cap:diseno}, el diseño de la solución, etc.
+
+\chapter{Estado del arte}
+\label{cap:estado}
+Revisión de trabajos y tecnologías relacionadas \cite{lamport1994}.
+
+\chapter{Diseño e implementación}
+\label{cap:diseno}
+
+\section{Arquitectura}
+\begin{figure}[H]
+  \centering
+  \fbox{\parbox[c][4cm][c]{0.7\textwidth}{\centering Aquí va tu figura\\
+    \texttt{\textbackslash includegraphics[width=0.7\textbackslash textwidth]\{img/arquitectura\}}}}
+  \caption{Arquitectura general del sistema.}
+  \label{fig:arquitectura}
+\end{figure}
+
+
+% =====================================================================
+%  BIBLIOGRAFÍA Y ANEXOS
+% =====================================================================
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliografía}
+\printbibliography[title={Bibliografía}]
+
+\appendix
+\chapter{Anexo de ejemplo}
+\label{anx:ejemplo}
+Material complementario.
+
+\end{document}
